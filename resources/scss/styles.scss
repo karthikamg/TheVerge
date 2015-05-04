@@ -1,0 +1,527 @@
+@import "compass";
+@import '_base';
+
+
+.size{
+	width: 100%;
+	height: auto;
+}
+.author-comment{
+	color: $color-white;
+	font-size: 0.7rem;
+	font-family: $main-font-family;
+	position: absolute;
+  	z-index: 3;
+  	padding: 10px 15px 0 15px;
+  	width: 85%;
+  	height: auto;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 1025px;
+	height: auto;
+
+	.container-header{
+		width: 100%;
+		height: 65px;
+		@media screen and (max-width: 1025px){
+			background-color: $color-logo;
+		}
+		@media screen and (min-width: 1025px){
+			margin-top: 10px;
+			height: 145px;
+		}
+
+		.upper-header{
+			width: 100%;			
+			@media screen and (min-width: 1025px){
+				height: 96px;
+			}
+			@media screen and (max-width: 1025px){
+				height: 65px;
+			}
+
+			.trend-article{
+				width:72.1%;
+				height: 65px;
+				@media screen and (min-width: 1025px){
+					height: 76px;
+				}
+				@include float-right;
+
+				@media screen and (min-width: 1025px){
+					margin-top: 20px;
+				}				
+			}
+		}
+		@media screen and (min-width: 1025px){
+		.lower-header-links{
+			width: 100%;
+			height: 49px;
+			}
+		}
+	}
+}
+
+
+#logo{
+	@include float-left;
+	// width: 315px;
+    height: 60px;
+    background-image: url("../resources/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  	width: 29.3%;
+
+    @media screen and (min-width: 700px) and (max-width: 1025px){
+    	background-size: 80%;
+    }
+
+    @media screen and (min-width: 1025px){
+		margin: 20px 0 0 -15px;
+		height: 80px;
+	}
+
+    @media screen and (max-width: 700px){
+    	width: 40%;
+    }
+    @media screen and (max-width: 1025px){
+    	width: 25%;
+    }
+    &:hover{
+    	background-color: $color-red;
+    }
+}
+.jack{
+	@media screen and (min-width: 700px){
+		@include inline-block;
+		width: 85%;
+		height: 60px;
+	    // margin-top: 15px;
+	    background-color: $color-white;
+
+	    @media screen and (max-width: 1025px) and (min-width: 700px){
+	    	margin-top: 0;
+	    	height: 65px;
+  			width: 84%;
+	    }
+
+	    img{
+	    	@include float-left;
+
+	    	@media screen and (max-width: 1045px) and (min-width: 700px){
+	    		display: none;
+	    	}
+    	}
+	}
+	@media screen and (max-width: 700px){
+		display: none;
+	}
+	
+}
+.trend-nw{
+ 		border: 1px solid $color-black;
+ 		height: 63px;
+ 		@include float-left;
+ 		padding-left: 10px;
+
+ 		@media screen and (max-width: 1045px){
+ 			width: 98%;
+ 		}
+ 		@media screen and (min-width: 1045px){
+ 			width: 83.7%;
+ 		}
+  		.trend-text{
+  			float: left;
+		    width: 92%;
+		    height: 48px;
+		    padding-top: 5px;
+		    line-height: 1.7;
+
+		    @media screen and (max-width: 1025px) and (min-width: 700px){
+	    		height: 38px;
+	    	}
+
+  			header{
+	 			color: $color-red;
+	 			font-size: $header-font5;
+ 			}
+			h3{
+				font-size: .85rem;
+				font-weight: normal;
+				color: $color-black;
+
+				@media screen and (max-width: 1025px) and (min-width: 700px){
+		    		font-size: 0.75rem;
+	    		}
+
+				&:hover{
+					color: $color-red;
+				}
+			}
+  		}
+ 		.trend-drop-down{
+ 			width: 8%;
+			height: 58px;
+			@include float-right;
+			background-color: $color-grey;
+			position: relative;
+
+			&:after{
+			    border: 0 solid transparent;
+			    border-top-color: $color-black;
+			    border-width: 5px 5px 0 5px;
+			    position: absolute;
+			    content: '';
+			    top: 30px;
+			    left: 15px;
+			}
+			&:hover:after{
+				border-top-color: $color-red;
+			}
+
+			@media screen and (max-width: 1025px) and (min-width: 700px){
+	    		height: 63px;
+	    	}
+ 		}
+}
+.new-article{
+	background-color: $color-logo;
+	color: $color-white;
+	@include float-right;
+    width: 10.1%;
+    height: 65px;
+    padding: 0 2px 0 4px;
+
+     @media screen and (max-width: 700px){
+     	width: 25%;
+     }
+      @media screen and (max-width: 1025px) and (min-width:700px){
+     	width: 14%;
+     }
+
+    @media screen and (min-width: 1025px){
+		// margin-top: 15px;
+		height: 60px;
+		width: 14.1%;
+	}
+	@media screen and (max-width: 1025px){
+		height: 60px;
+	}
+
+    &:hover{
+    	background-color: $color-red;
+    }
+
+    strong{
+    	line-height: 1;
+	    font-size: 2.5rem;
+	    margin-left: 30px;
+        margin-top: 3px;
+
+        @media screen and (max-width: 1025px) and (min-width: 700px){
+        	margin-left: 15px;
+        }
+        @media screen and (max-width: 700px){
+        	margin-left: 10px;
+        }
+    }
+    div{
+    	em{
+    	font-size: .85rem;
+    	font-style: normal;
+
+    	@media screen and (max-width: 870px) and (min-width: 600px){
+    			font-size: .75rem;
+    		}
+    	@media screen and (max-width: 1025px) and (min-width: 870px){
+    			font-size: .65rem;
+    		}
+    	@media screen and (max-width: 600px){
+        		font-size: 0.8rem;
+        	}
+        }
+    }
+}
+.social-icons{
+	@media screen and (max-width: 1025px){
+		display: none;
+	}
+	width: 130px;
+	height: 16px;
+  	float: right;
+  	// margin-top: 5px;
+	ul{
+		li{
+			@include inline-block;
+			margin-left: 10px;
+			a{
+				img{
+				width: 18px;
+  				height: 14px;
+				}
+			}			
+		}
+	}
+}
+.header-links{
+	@media screen and (max-width: 1025px){
+		display: none;
+	}
+	width: 98%;
+	height: 30px;
+	padding: 10px;
+	background-color: $color-black;
+
+	ul{
+		li{
+			text-transform: uppercase;
+			// @include inline-block;
+			display: inline-block;
+			margin-right: 18px;
+			font-family: $header-link-font;
+
+			a{
+				color: $color-white;
+
+				img{
+				width: 30px;
+  				height: 30px;
+  				margin-right: 5px;
+  				vertical-align: middle;
+  				}
+  				&:hover{
+  					color: $color-logo;
+  				}
+			}
+		}
+	}
+}
+
+.content{
+	@extend .size;
+
+	.content-el{
+		@extend .size;
+		border: 1px solid $color-grey;
+	}
+}
+
+.el{
+  	width: 341px;
+  	height: 175px;
+  	background-repeat: no-repeat;
+    position: relative;
+    @include float-left;
+    z-index: 1;  
+}
+.image-after{
+	opacity: .7;
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.image-hover-after{
+	opacity: .9;
+}
+
+
+.avengers{
+	@extend .el;
+	height: 350px;
+	background-image: url("../resources/images/avengers-age-of-ultron-comic-con-14-poster-full-hd.0.0.jpg");
+	
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#292484,#dc4225);
+	}  
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	} 
+  	h2{
+  		font-size: 2.5rem;
+  	}
+  	@media screen and (max-width: 700px){
+  		height: 180px;
+  		width: 100%;
+  		background-size: cover;
+
+  		h2{
+  			font-size: 1.3rem;
+  		}
+  	}
+}
+.may-weather{
+	@extend .el;
+	background-image: url("../resources/images/GettyImages-472022182.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#002f4b,#417711);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	} 
+  	@media screen and (max-width: 700px){
+  		height: 180px;
+  		width: 100%;
+  		background-size: cover;
+  	}  
+}
+.startup{
+	@extend .el;
+	background-image: url("../resources/images/GettyImages-461180118.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#292484,#a83279);
+	} 
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	} 
+  	@media screen and (max-width: 700px){
+  		height: 180px;
+  		width: 450px;
+  		background-size: cover;
+  	}
+}
+.last-of-us{
+	@extend .el;
+	background-image: url("../resources/images/The_Last_of_Us__Remastered_20150312202125_1.0.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#d38312,#002f4b);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	@media screen and (max-width: 700px){
+  		height: 180px;
+  		width: 450px;
+  		background-size: cover;
+  	}
+}
+.weekender{
+	@extend .el;
+	height: 350px;
+	background-image: url("../resources/images/weekender-graphics_apple.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#e0be00,#dc4225);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	h2{
+  		font-size: 2.5rem;
+  	}
+  	@media screen and (max-width: 700px){
+  		height: 180px;
+  		width: 450px;
+  		background-size: cover;
+
+  		h2{
+  			font-size: 1.3rem;
+  		}
+  	}
+}
+.watch{
+	@extend .el;
+	top: -175px;
+	background-image: url("../resources/images/GettyImages-461496224.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#d38312,#a83279);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	@media screen and (max-width: 700px){
+  		height: 180px;
+  		width: 450px;
+  		background-size: cover;
+  		top: 0;
+  	}
+}
+.tesla{
+	@extend .el;
+	top: -175px;
+	background-image: url("../resources/images/DSC_8244-2040w.0.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#417711,#dc4225);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	@media screen and (max-width: 700px){
+  		height: 180px;
+  		width: 100%;
+  		background-size: cover;
+  		top: 0;
+  	}
+}
+
+.comment-higher{
+	@extend .comment;
+	background-color: $color-yellow;
+	color: $color-black;
+}
+.comment-lower{
+	@extend .comment;
+	background-color: $color-green;
+	color: $color-white;
+}
+
+.author{
+	@include float-left;
+}
+.comment{
+	@include float-right;
+ 	font-size: $header-font5;
+ 	padding: .4rem .2rem .2rem;
+  	line-height: .8;
+
+ 	&:before{
+ 		border-top-color: $color-black;
+ 		border: 0 solid transparent;
+	    border-top-color: black;
+	    border-width: 5px 7px 0px 0px;
+	    position: absolute;
+	    content: '';
+	    top: 30px;
+	    right: 15px;
+	}
+}
+
+.image-content-scroll{
+	overflow-x: scroll;
+	display: inline-block;
+	width: 1000px;
+	height: 180px;
+	background-color: black;
+	overflow-y: hidden;
+	max-width: 1370px;
+	white-space: nowrap;
+
+	li{
+		display: inline-block;
+	}
+// 	@media screen and (min-width: 700px){
+// 		display: none;
+// 	}
+ }
+.no-scroll{
+	@media screen and (max-width: 700px){
+		display: none;
+		width: 100%;
+		height: auto;
+	}
+}

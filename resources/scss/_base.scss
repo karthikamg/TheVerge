@@ -1,0 +1,50 @@
+@import '_variables';
+
+body{
+	padding: 0;
+	margin: 0;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: $color-white;
+	font-color: $color-black;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: $header-link-font;
+	font-style: normal;
+
+	@media screen and (min-width: 600px){
+		font-size: $body-font3;
+	}
+	@media screen and (min-width: 800px){
+		font-size: $body-font2;
+	}
+	@media screen and (min-width: 1025px){
+		font-size: $body-font1;
+	}
+}
+
+a{
+	text-decoration: none;
+}
+ul{
+	li{
+		list-style-type: none;
+	}
+}
+h2{
+	color: $color-white;
+	font-family: $heading2-font;
+	position: absolute;
+	z-index: 2;  
+	text-align: center;
+    top: 15px;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    padding: 12px;
+}
