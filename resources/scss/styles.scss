@@ -19,43 +19,43 @@
 
 .container{
 	margin: 0 auto;
-	max-width: 1025px;
+	max-width: 700px;
 	height: auto;
 
 	.container-header{
 		width: 100%;
 		height: 65px;
-		@media screen and (max-width: 1025px){
+		@media screen and (max-width: 700px){
 			background-color: $color-logo;
 		}
-		@media screen and (min-width: 1025px){
+		@media screen and (min-width: 700px){
 			margin-top: 10px;
 			height: 145px;
 		}
 
 		.upper-header{
 			width: 100%;			
-			@media screen and (min-width: 1025px){
+			@media screen and (min-width: 700px){
 				height: 96px;
 			}
-			@media screen and (max-width: 1025px){
+			@media screen and (max-width: 700px){
 				height: 65px;
 			}
 
 			.trend-article{
 				width:72.1%;
 				height: 65px;
-				@media screen and (min-width: 1025px){
+				@media screen and (min-width: 700px){
 					height: 76px;
 				}
 				@include float-right;
 
-				@media screen and (min-width: 1025px){
+				@media screen and (min-width: 700px){
 					margin-top: 20px;
 				}				
 			}
 		}
-		@media screen and (min-width: 1025px){
+		@media screen and (min-width: 700px){
 		.lower-header-links{
 			width: 100%;
 			height: 49px;
@@ -74,11 +74,11 @@
     background-size: 100%;
   	width: 29.3%;
 
-    @media screen and (min-width: 700px) and (max-width: 1025px){
+    @media screen and (min-width: 700px) and (max-width: 700px){
     	background-size: 80%;
     }
 
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 700px){
 		margin: 20px 0 0 -15px;
 		height: 80px;
 	}
@@ -86,7 +86,7 @@
     @media screen and (max-width: 700px){
     	width: 40%;
     }
-    @media screen and (max-width: 1025px){
+    @media screen and (max-width: 700px){
     	width: 25%;
     }
     &:hover{
@@ -101,7 +101,7 @@
 	    // margin-top: 15px;
 	    background-color: $color-white;
 
-	    @media screen and (max-width: 1025px) and (min-width: 700px){
+	    @media screen and (max-width: 700px) and (min-width: 700px){
 	    	margin-top: 0;
 	    	height: 65px;
   			width: 84%;
@@ -139,7 +139,7 @@
 		    padding-top: 5px;
 		    line-height: 1.7;
 
-		    @media screen and (max-width: 1025px) and (min-width: 700px){
+		    @media screen and (max-width: 700px) and (min-width: 700px){
 	    		height: 38px;
 	    	}
 
@@ -152,7 +152,7 @@
 				font-weight: normal;
 				color: $color-black;
 
-				@media screen and (max-width: 1025px) and (min-width: 700px){
+				@media screen and (max-width: 700px) and (min-width: 700px){
 		    		font-size: 0.75rem;
 	    		}
 
@@ -181,7 +181,7 @@
 				border-top-color: $color-red;
 			}
 
-			@media screen and (max-width: 1025px) and (min-width: 700px){
+			@media screen and (max-width: 700px) and (min-width: 700px){
 	    		height: 63px;
 	    	}
  		}
@@ -197,16 +197,16 @@
      @media screen and (max-width: 700px){
      	width: 25%;
      }
-      @media screen and (max-width: 1025px) and (min-width:700px){
+      @media screen and (max-width: 700px) and (min-width:700px){
      	width: 14%;
      }
 
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 700px){
 		// margin-top: 15px;
 		height: 60px;
 		width: 14.1%;
 	}
-	@media screen and (max-width: 1025px){
+	@media screen and (max-width: 700px){
 		height: 60px;
 	}
 
@@ -220,7 +220,7 @@
 	    margin-left: 30px;
         margin-top: 3px;
 
-        @media screen and (max-width: 1025px) and (min-width: 700px){
+        @media screen and (max-width: 700px) and (min-width: 700px){
         	margin-left: 15px;
         }
         @media screen and (max-width: 700px){
@@ -235,7 +235,7 @@
     	@media screen and (max-width: 870px) and (min-width: 600px){
     			font-size: .75rem;
     		}
-    	@media screen and (max-width: 1025px) and (min-width: 870px){
+    	@media screen and (max-width: 700px) and (min-width: 870px){
     			font-size: .65rem;
     		}
     	@media screen and (max-width: 600px){
@@ -245,7 +245,7 @@
     }
 }
 .social-icons{
-	@media screen and (max-width: 1025px){
+	@media screen and (max-width: 700px){
 		display: none;
 	}
 	width: 130px;
@@ -266,7 +266,7 @@
 	}
 }
 .header-links{
-	@media screen and (max-width: 1025px){
+	@media screen and (max-width: 700px){
 		display: none;
 	}
 	width: 98%;
@@ -384,7 +384,7 @@
   	} 
   	@media screen and (max-width: 700px){
   		height: 180px;
-  		width: 450px;
+  		width: 100%;
   		background-size: cover;
   	}
 }
@@ -401,8 +401,9 @@
   	}
   	@media screen and (max-width: 700px){
   		height: 180px;
-  		width: 450px;
+  		width: 500px;
   		background-size: cover;
+  		font-size: 0.7rem;
   	}
 }
 .weekender{
@@ -422,11 +423,11 @@
   	}
   	@media screen and (max-width: 700px){
   		height: 180px;
-  		width: 450px;
+  		width: 500px;
   		background-size: cover;
 
   		h2{
-  			font-size: 1.3rem;
+  			font-size: 1.1rem;
   		}
   	}
 }
@@ -444,8 +445,9 @@
   	}
   	@media screen and (max-width: 700px){
   		height: 180px;
-  		width: 450px;
+  		width: 500px;
   		background-size: cover;
+  		font-size: 0.8rem;
   		top: 0;
   	}
 }
@@ -463,8 +465,9 @@
   	}
   	@media screen and (max-width: 700px){
   		height: 180px;
-  		width: 100%;
+  		width: 500px;
   		background-size: cover;
+  		font-size: 0.8rem;
   		top: 0;
   	}
 }
@@ -473,11 +476,19 @@
 	@extend .comment;
 	background-color: $color-yellow;
 	color: $color-black;
+
+	@media screen and (max-width: 700px){
+		margin-top: -20px;
+	}
 }
 .comment-lower{
 	@extend .comment;
 	background-color: $color-green;
 	color: $color-white;
+
+	@media screen and (max-width: 700px){
+		margin-top: -20px;
+	}
 }
 
 .author{
@@ -498,13 +509,17 @@
 	    content: '';
 	    top: 30px;
 	    right: 15px;
+
+	    @media screen and (max-width: 700px){
+	    	top: 36px;
+	    }
 	}
 }
 
 .image-content-scroll{
 	overflow-x: scroll;
 	display: inline-block;
-	width: 1000px;
+	width: 100%;
 	height: 180px;
 	background-color: black;
 	overflow-y: hidden;

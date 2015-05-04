@@ -43,8 +43,14 @@ h2{
 	z-index: 2;  
 	text-align: center;
     top: 15px;
-    font-weight: normal;
-    font-size: 1.3rem;
+    font-weight: normal;   
     line-height: 1.2;
     padding: 12px;
+
+    @media screen and (min-width: 700px){
+    	font-size: 1.3rem;
+    }
+    @media screen and (max-width: 700px){
+    	white-space: pre-wrap;
+    }
 }
