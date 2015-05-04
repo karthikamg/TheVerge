@@ -19,43 +19,43 @@
 
 .container{
 	margin: 0 auto;
-	max-width: 700px;
+	max-width: 1025px;
 	height: auto;
 
 	.container-header{
 		width: 100%;
 		height: 65px;
-		@media screen and (max-width: 700px){
+		@media screen and (max-width: 1025px){
 			background-color: $color-logo;
 		}
-		@media screen and (min-width: 700px){
+		@media screen and (min-width: 1025px){
 			margin-top: 10px;
 			height: 145px;
 		}
 
 		.upper-header{
 			width: 100%;			
-			@media screen and (min-width: 700px){
+			@media screen and (min-width: 1025px){
 				height: 96px;
 			}
-			@media screen and (max-width: 700px){
+			@media screen and (max-width: 1025px){
 				height: 65px;
 			}
 
 			.trend-article{
 				width:72.1%;
 				height: 65px;
-				@media screen and (min-width: 700px){
+				@media screen and (min-width: 1025px){
 					height: 76px;
 				}
 				@include float-right;
 
-				@media screen and (min-width: 700px){
+				@media screen and (min-width: 1025px){
 					margin-top: 20px;
 				}				
 			}
 		}
-		@media screen and (min-width: 700px){
+		@media screen and (min-width: 1025px){
 		.lower-header-links{
 			width: 100%;
 			height: 49px;
@@ -74,11 +74,11 @@
     background-size: 100%;
   	width: 29.3%;
 
-    @media screen and (min-width: 700px) and (max-width: 700px){
+    @media screen and (min-width: 700px) and (max-width: 1025px){
     	background-size: 80%;
     }
 
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 1025px){
 		margin: 20px 0 0 -15px;
 		height: 80px;
 	}
@@ -86,7 +86,7 @@
     @media screen and (max-width: 700px){
     	width: 40%;
     }
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 1025px){
     	width: 25%;
     }
     &:hover{
@@ -101,7 +101,7 @@
 	    // margin-top: 15px;
 	    background-color: $color-white;
 
-	    @media screen and (max-width: 700px) and (min-width: 700px){
+	    @media screen and (max-width: 1025px) and (min-width: 700px){
 	    	margin-top: 0;
 	    	height: 65px;
   			width: 84%;
@@ -139,7 +139,7 @@
 		    padding-top: 5px;
 		    line-height: 1.7;
 
-		    @media screen and (max-width: 700px) and (min-width: 700px){
+		    @media screen and (max-width: 1025px) and (min-width: 700px){
 	    		height: 38px;
 	    	}
 
@@ -152,7 +152,7 @@
 				font-weight: normal;
 				color: $color-black;
 
-				@media screen and (max-width: 700px) and (min-width: 700px){
+				@media screen and (max-width: 1025px) and (min-width: 700px){
 		    		font-size: 0.75rem;
 	    		}
 
@@ -181,7 +181,7 @@
 				border-top-color: $color-red;
 			}
 
-			@media screen and (max-width: 700px) and (min-width: 700px){
+			@media screen and (max-width: 1025px) and (min-width: 700px){
 	    		height: 63px;
 	    	}
  		}
@@ -197,16 +197,16 @@
      @media screen and (max-width: 700px){
      	width: 25%;
      }
-      @media screen and (max-width: 700px) and (min-width:700px){
+      @media screen and (max-width: 1025px) and (min-width:700px){
      	width: 14%;
      }
 
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 1025px){
 		// margin-top: 15px;
 		height: 60px;
 		width: 14.1%;
 	}
-	@media screen and (max-width: 700px){
+	@media screen and (max-width: 1025px){
 		height: 60px;
 	}
 
@@ -220,7 +220,7 @@
 	    margin-left: 30px;
         margin-top: 3px;
 
-        @media screen and (max-width: 700px) and (min-width: 700px){
+        @media screen and (max-width: 1025px) and (min-width: 700px){
         	margin-left: 15px;
         }
         @media screen and (max-width: 700px){
@@ -235,7 +235,7 @@
     	@media screen and (max-width: 870px) and (min-width: 600px){
     			font-size: .75rem;
     		}
-    	@media screen and (max-width: 700px) and (min-width: 870px){
+    	@media screen and (max-width: 1025px) and (min-width: 870px){
     			font-size: .65rem;
     		}
     	@media screen and (max-width: 600px){
@@ -245,7 +245,7 @@
     }
 }
 .social-icons{
-	@media screen and (max-width: 700px){
+	@media screen and (max-width: 1025px){
 		display: none;
 	}
 	width: 130px;
@@ -266,7 +266,7 @@
 	}
 }
 .header-links{
-	@media screen and (max-width: 700px){
+	@media screen and (max-width: 1025px){
 		display: none;
 	}
 	width: 98%;
@@ -347,12 +347,18 @@
   	@media screen and (max-width: 700px){
   		height: 180px;
   		width: 100%;
+  		background-size: cover;  		
+  	}
+  	@media screen and (min-width: 700px) and (max-width: 1025px){
   		background-size: cover;
-
+  		width: 50%;
+  	}
+  	@media screen and (max-width: 1025px){
   		h2{
   			font-size: 1.3rem;
   		}
   	}
+
 }
 .may-weather{
 	@extend .el;
@@ -369,6 +375,10 @@
   		height: 180px;
   		width: 100%;
   		background-size: cover;
+  	}
+  	@media screen and (min-width: 700px) and (max-width: 1025px){
+  		background-size: cover;
+  		width: 50%;
   	}  
 }
 .startup{
@@ -387,6 +397,10 @@
   		width: 100%;
   		background-size: cover;
   	}
+  	@media screen and (min-width: 700px) and (max-width: 1025px){
+  		background-size: cover;
+  		width: 50%;
+  	}
 }
 .last-of-us{
 	@extend .el;
@@ -399,7 +413,7 @@
 	&:hover:after{
   		@extend  .image-hover-after;
   	}
-  	@media screen and (max-width: 700px){
+  	@media screen and (max-width: 1025px){
   		height: 180px;
   		width: 500px;
   		background-size: cover;
@@ -421,7 +435,7 @@
   	h2{
   		font-size: 2.5rem;
   	}
-  	@media screen and (max-width: 700px){
+  	@media screen and (max-width: 1025px){
   		height: 180px;
   		width: 500px;
   		background-size: cover;
@@ -443,7 +457,7 @@
 	&:hover:after{
   		@extend  .image-hover-after;
   	}
-  	@media screen and (max-width: 700px){
+  	@media screen and (max-width: 1025px){
   		height: 180px;
   		width: 500px;
   		background-size: cover;
@@ -463,7 +477,7 @@
 	&:hover:after{
   		@extend  .image-hover-after;
   	}
-  	@media screen and (max-width: 700px){
+  	@media screen and (max-width: 1025px){
   		height: 180px;
   		width: 500px;
   		background-size: cover;
@@ -477,7 +491,7 @@
 	background-color: $color-yellow;
 	color: $color-black;
 
-	@media screen and (max-width: 700px){
+	@media screen and (max-width: 1025px){
 		margin-top: -20px;
 	}
 }
@@ -486,7 +500,7 @@
 	background-color: $color-green;
 	color: $color-white;
 
-	@media screen and (max-width: 700px){
+	@media screen and (max-width: 1025px){
 		margin-top: -20px;
 	}
 }
@@ -510,7 +524,7 @@
 	    top: 30px;
 	    right: 15px;
 
-	    @media screen and (max-width: 700px){
+	    @media screen and (max-width: 1025px){
 	    	top: 36px;
 	    }
 	}
@@ -529,12 +543,12 @@
 	li{
 		display: inline-block;
 	}
-// 	@media screen and (min-width: 700px){
-// 		display: none;
-// 	}
+	@media screen and (min-width: 1025px){
+		display: none;
+	}
  }
 .no-scroll{
-	@media screen and (max-width: 700px){
+	@media screen and (max-width: 1025px){
 		display: none;
 		width: 100%;
 		height: auto;
