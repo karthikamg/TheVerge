@@ -1,0 +1,115 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+
+.color-white{
+	color: $color-white;
+
+	&:hover{
+		@extend .color-logo;
+		text-decoration: underline;
+	}
+}
+.color-logo{
+	color: $color-logo;
+}
+
+.marvel-logo-create{
+	transform: skew(-10deg, -20deg);
+	@include size(13px,13px);
+	border-width: thick;
+}
+.marvel-cine-header{
+	@include size(98.5%,30px);
+	background-color: $color-black;
+	padding: .55rem .5rem;
+
+	ul{
+		@include size(100%,30px);
+		.logo{
+			@include size(100%,30px);
+			text-transform: uppercase;
+			color: $color-white;
+			
+		   	.logo4{
+			   		border: 2px solid blueviolet;
+			   		@extend .marvel-logo-create;
+			   		@include marvel-logo-ppties(5px,-660px);	
+			   		border-bottom: none;
+					border-right: none;	
+					border-width: thick;   		
+		   	}
+		   	.logo3{
+			   		border: 2px solid red;
+			   		@extend .marvel-logo-create;		   			
+			   		border-bottom: none; 
+			   		border-right: none; 
+	  				border-width: thick;  
+	  				@include marvel-logo-ppties(5px,-15px);		
+		   	}
+		   	.logo2{
+				   	background-color: $color-white;
+				    @extend .marvel-logo-create;
+	  				@include marvel-logo-ppties(8px,-15px);
+		   	}
+		   	.logo1{
+				   	@extend .marvel-logo-create;
+					border: 2px solid grey;
+					border-top: none;
+					border-left: none;  
+	  				@include marvel-logo-ppties(12px,-13px);
+		   	}
+		}
+		.title{
+			@include size(70%,30px);
+			color: $color-white;
+			font-size: 30px;
+			margin-left: 10px;
+		}
+		.title-watch{
+			color: #fa4b2a;
+			font-size: 30px;
+			margin-left: 10px;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.title-seemore{
+			float: right;
+			margin-top: 12px;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.image-marvel-after{
+	opacity: .7;
+	content: '';
+    position: absolute;
+    @include size(100%,100%);
+}
+
+.marvel-videos{
+	@include size(70%,450px);
+	background: url('../resources/images/vrg_vup_194_marvel_thumb_720.0.0.png') no-repeat;
+	background-size: cover;
+	position: relative;
+	top: -125px;
+	left:0;
+	@include float-left;
+	z-index: 10;
+
+	&:after{
+		@extend .image-marvel-after;
+  		background-image: -webkit-linear-gradient(135deg,#dc4225,#002f4b);
+	}
+	&:hover:after{
+		background-image: -webkit-linear-gradient(135deg,#292484,#dc4225);
+		opacity: .9;
+	}
+}

@@ -1,0 +1,254 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+
+.content{
+	@include size;
+
+	.content-el{
+		@include size(100%,525px);
+		border: 1px solid $color-grey;
+	}
+}
+
+.el{
+  	@include size(341px,175px);
+  	background-repeat: no-repeat;
+    position: relative;
+    @include float-left;
+    z-index: 1;  
+}
+.image-after{
+	opacity: .7;
+	content: '';
+  position: absolute;
+  @include size(100%,100%);
+}
+.image-hover-after{
+	opacity: .9;
+}
+
+
+.avengers{
+	@extend .el;
+	height: 350px;
+	background-image: url("../resources/images/avengers-age-of-ultron-comic-con-14-poster-full-hd.0.0.jpg");
+	
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#292484,#dc4225);
+	}  
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	} 
+  	h2{
+  		font-size: 2.5rem;
+  	}
+  	@media screen and (max-width: 700px){
+  		@include size(100%,180px);
+  		background-size: cover;  		
+  	}
+  	@media screen and (min-width: 700px) and (max-width: 1025px){
+  		background-size: cover;
+  		width: 50%;
+  	}
+  	@media screen and (max-width: 1025px){
+  		h2{
+  			font-size: 1.3rem;
+  		}
+  	}
+
+}
+.may-weather{
+	@extend .el;
+	background-image: url("../resources/images/GettyImages-472022182.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#002f4b,#417711);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	} 
+  	@media screen and (max-width: 700px){
+  		@include size(100%,180px);
+  		background-size: cover;
+  	}
+  	@media screen and (min-width: 700px) and (max-width: 1025px){
+  		background-size: cover;
+  		width: 50%;
+  	} 
+  	@media screen and (max-width: 1025px){
+  		h2{
+  			font-size: 1.3rem;
+  		}
+  	} 
+}
+.startup{
+	@extend .el;
+	background-image: url("../resources/images/GettyImages-461180118.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#292484,#a83279);
+	} 
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	} 
+  	@media screen and (max-width: 700px){
+  		@include size(100%,180px);
+  		background-size: cover;
+  	}
+  	@media screen and (min-width: 700px) and (max-width: 1025px){
+  		background-size: cover;
+  		width: 50%;
+  	}
+  	@media screen and (max-width: 1025px){
+  		h2{
+  			font-size: 1.3rem;
+  		}
+  	}
+}
+.last-of-us{
+	@extend .el;
+	background-image: url("../resources/images/The_Last_of_Us__Remastered_20150312202125_1.0.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#d38312,#002f4b);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	@media screen and (max-width: 1025px){
+  		@include size(500px,180px);
+  		background-size: cover;
+  		font-size: 0.7rem;
+  	}
+}
+.weekender{
+	@extend .el;
+	height: 350px;
+	background-image: url("../resources/images/weekender-graphics_apple.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#e0be00,#dc4225);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	h2{
+  		font-size: 2.5rem;
+  	}
+  	@media screen and (max-width: 1025px){
+  		@include size(500px,180px);
+  		background-size: cover;
+
+  		h2{
+  			font-size: 1.1rem;
+  		}
+  	}
+}
+.watch{
+	@extend .el;
+	top: -175px;
+	background-image: url("../resources/images/GettyImages-461496224.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#d38312,#a83279);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	@media screen and (max-width: 1025px){
+  		@include size(500px,180px);
+  		background-size: cover;
+  		font-size: 0.8rem;
+  		top: 0;
+  	}
+}
+.tesla{
+	@extend .el;
+	top: -175px;
+	background-image: url("../resources/images/DSC_8244-2040w.0.0.jpg"); 
+
+	&:after{
+		@extend .image-after;
+  		background-image: -webkit-linear-gradient(135deg,#417711,#dc4225);
+	}
+	&:hover:after{
+  		@extend  .image-hover-after;
+  	}
+  	@media screen and (max-width: 1025px){
+  		@include size(500px,180px);
+  		background-size: cover;
+  		font-size: 0.8rem;
+  		top: 0;
+  	}
+}
+
+.comment-higher{
+	@extend .comment;
+	background-color: $color-yellow;
+	color: $color-black;
+
+	@media screen and (max-width: 1025px){
+		margin-top: -20px;
+	}
+}
+.comment-lower{
+	@extend .comment;
+	background-color: $color-green;
+	color: $color-white;
+
+	@media screen and (max-width: 1025px){
+		margin-top: -20px;
+	}
+}
+
+.author{
+	@include float-left;
+}
+.comment{
+	@include float-right;
+ 	font-size: $header-font5;
+ 	padding: .4rem .2rem .2rem;
+  line-height: .8;
+
+ 	&:before{
+ 		border-top-color: $color-black;
+ 		border: 0 solid transparent;
+    border-top-color: black;
+    border-width: 5px 7px 0px 0px;
+    position: absolute;
+    content: '';
+    top: 30px;
+    right: 15px;
+
+	    @media screen and (max-width: 1025px){
+	    	top: 36px;
+	    }
+	}
+}
+
+.image-scroll{
+	@media screen and (max-width: 1025px){
+		overflow-x: scroll;
+		display: inline-block;
+		width: 100%;
+		height: 180px;
+		background-color: black;
+		overflow-y: hidden;
+		max-width: 1370px;
+    @include nowrap;
+		// white-space: nowrap;
+
+		li{
+			display: inline-block;
+		}
+	}
+}
