@@ -980,13 +980,13 @@ h2 {
   width: 70%;
   height: 30px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 10px;
 }
 /* line 70, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .title-watch {
   color: #fa4b2a;
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 10px;
 }
 /* line 75, ../resources/scss/layout/_second-marvel-universe.scss */
