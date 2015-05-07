@@ -7,3 +7,90 @@
 	margin-left: $left;
 	display: inline-block;
 }
+@mixin side-video-img($img: ''){
+	@include size(35.7%,100%);
+	background: url($img) no-repeat;
+	background-size: 110px 100px;
+	@media screen and (max-width: 700px){
+		width: 17%;
+		background-size: 115px 95px;
+	}
+}
+@mixin side-video-play($top: 0px,$left: 0px){
+	width: 40px;
+    height: 40px;
+    border-radius: 80px;
+    z-index: 13;
+    background-color: #222;
+    top: $top;
+    left: $left;
+    opacity: 0.6;
+    border: 3px solid white;
+    position: absolute;
+}
+@mixin common-video{
+	@extend .video-link;
+
+	&:after{
+		@extend .play;
+	    border-width: 12px 0 12px 22.66667px;
+	    display: block;
+	    z-index: 13;
+	    left: 35px;
+	    position: relative;
+  		top: 30px;
+
+  		@media screen and (min-width: 1025px){
+  			left: 50px;
+  		}
+  		@media screen and (min-width: 700px) and (max-width: 1025px){
+  			left: 35px;
+  		}
+	}
+}
+@mixin each-video{
+	@include float-left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+
+	&:after{
+		  @extend .image-marvel-after;
+		  @include side-video-play(20px,35px);
+
+		  @media screen and(max-width: 700px){
+		  	 @include side-video-play(20px,18px);
+		  }
+		  @media screen and(max-width: 1025px) and (min-width: 700px){
+		  	@include side-video-play(20px,20px);
+		  }
+		}
+}
+@mixin linear-gradient($color1: $color-white, $color2: $color-white){
+	background-image: -webkit-linear-gradient(135deg,$color1,$color2);
+    background-image: linear-gradient(135deg,$color1,$color2);
+}
+
+@mixin box-style($height: 50%){
+	@include size(33.2%,$height);
+	border: 1px solid $color-grey;
+}
+
+@mixin article-edge($top: 0){
+	content: "";
+    position: absolute;
+    top: $top;
+    left: 332px;
+    border: 1px solid #919191;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+}
+
+@mixin each-article($top: 0){
+	position: relative;
+	top: $top;
+	@include float-left;
+}

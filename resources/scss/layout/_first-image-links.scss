@@ -9,6 +9,13 @@
 	.content-el{
 		@include size(100%,525px);
 		border: 1px solid $color-grey;
+
+    @media screen and (max-width: 700px){
+      @include size(100%,705px);
+    }
+     @media screen and (min-width: 1025px) and (max-width: 1040px){
+      width: 130%;
+    }
 	}
 }
 
@@ -28,6 +35,22 @@
 .image-hover-after{
 	opacity: .9;
 }
+.section1-image-text{
+  position: absolute;
+  z-index: 2;  
+  text-align: center;
+  top: 15px;
+  font-weight: normal;   
+  line-height: 1.2;
+  padding: 12px;
+
+  @media screen and (min-width: 1025px){
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 1025px){
+    white-space: pre-wrap;
+  }
+}
 
 
 .avengers{
@@ -35,10 +58,13 @@
 	height: 350px;
 	background-image: url("../resources/images/avengers-age-of-ultron-comic-con-14-poster-full-hd.0.0.jpg");
 	
+  h2{
+    @extend .section1-image-text;
+  }
 
 	&:after{
 		@extend .image-after;
-  		background-image: -webkit-linear-gradient(135deg,#292484,#dc4225);
+    @include linear-gradient($color1,$color2);
 	}  
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -65,9 +91,13 @@
 	@extend .el;
 	background-image: url("../resources/images/GettyImages-472022182.0.jpg"); 
 
+  h2{
+    @extend .section1-image-text;
+  }
+
 	&:after{
 		@extend .image-after;
-  		background-image: -webkit-linear-gradient(135deg,#002f4b,#417711);
+  	@include linear-gradient($color3,$color4);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -90,9 +120,13 @@
 	@extend .el;
 	background-image: url("../resources/images/GettyImages-461180118.0.jpg"); 
 
+h2{
+    @extend .section1-image-text;
+  }
+
 	&:after{
 		@extend .image-after;
-  		background-image: -webkit-linear-gradient(135deg,#292484,#a83279);
+  	@include linear-gradient($color5,$color6);
 	} 
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -115,9 +149,13 @@
 	@extend .el;
 	background-image: url("../resources/images/The_Last_of_Us__Remastered_20150312202125_1.0.0.jpg"); 
 
+h2{
+    @extend .section1-image-text;
+  }
+
 	&:after{
 		@extend .image-after;
-  		background-image: -webkit-linear-gradient(135deg,#d38312,#002f4b);
+  	@include linear-gradient($color7,$color3);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -133,9 +171,13 @@
 	height: 350px;
 	background-image: url("../resources/images/weekender-graphics_apple.0.jpg"); 
 
+  h2{
+    @extend .section1-image-text;
+  }
+
 	&:after{
 		@extend .image-after;
-  		background-image: -webkit-linear-gradient(135deg,#e0be00,#dc4225);
+  	@include linear-gradient($color8,$color2);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -157,9 +199,13 @@
 	top: -175px;
 	background-image: url("../resources/images/GettyImages-461496224.0.jpg"); 
 
+  h2{
+    @extend .section1-image-text;
+  }
+
 	&:after{
 		@extend .image-after;
-  		background-image: -webkit-linear-gradient(135deg,#d38312,#a83279);
+  	@include linear-gradient($color7,$color6);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -176,9 +222,13 @@
 	top: -175px;
 	background-image: url("../resources/images/DSC_8244-2040w.0.0.jpg"); 
 
+  h2{
+    @extend .section1-image-text;
+  }
+
 	&:after{
 		@extend .image-after;
-  		background-image: -webkit-linear-gradient(135deg,#417711,#dc4225);
+  	@include linear-gradient($color4,$color2);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;

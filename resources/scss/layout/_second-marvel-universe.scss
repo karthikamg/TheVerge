@@ -3,6 +3,15 @@
 @import 'helpers/_mixins';
 @import 'helpers/_variables';
 
+.content-marvel-el{
+	@include size(100%,525px);
+	border: 1px solid $color-grey;
+
+	@media screen and (min-width: 700px) and (max-width: 1025px){
+		height: 380px;
+	}
+}
+
 .color-white{
 	color: $color-white;
 
@@ -27,15 +36,23 @@
 
 	ul{
 		@include size(100%,30px);
+		
 		.logo{
-			@include size(100%,30px);
+			// @include size(100%,30px);
+			@include size(60rem,2rem);
 			text-transform: uppercase;
 			color: $color-white;
 			
 		   	.logo4{
 			   		border: 2px solid blueviolet;
 			   		@extend .marvel-logo-create;
-			   		@include marvel-logo-ppties(5px,-660px);	
+			   		@media screen and (min-width: 1025px){
+			   			@include marvel-logo-ppties(5px,-660px);
+			   		}
+			   		@media screen and (max-width: 1025px){
+			   			@include marvel-logo-ppties(5px,0px);
+			   		}
+			   		// @include marvel-logo-ppties(5px,-660px);	
 			   		border-bottom: none;
 					border-right: none;	
 					border-width: thick;   		
@@ -53,20 +70,23 @@
 				    @extend .marvel-logo-create;
 	  				@include marvel-logo-ppties(8px,-15px);
 		   	}
-		   	.logo1{
-				   	@extend .marvel-logo-create;
-					border: 2px solid grey;
-					border-top: none;
-					border-left: none;  
-	  				@include marvel-logo-ppties(12px,-13px);
+		   	.video-icon{
+
+					  border-top: none;
+					  border-left: none;
+					  margin-left: -670px;
+					  display: inline-block;
+					  width: 25px;
+					  height: 100%;
+					  vertical-align: bottom;
+
+					  @media screen and (max-width: 1025px){
+						margin-left: 0px;
+						margin-top: 5px;
+					}
 		   	}
 		}
-		.title{
-			@include size(70%,30px);
-			color: $color-white;
-			font-size: 25px;
-			margin-left: 10px;
-		}
+		
 		.title-watch{
 			color: #fa4b2a;
 			font-size: 25px;
@@ -79,6 +99,13 @@
 		.title-seemore{
 			float: right;
 			margin-top: 12px;
+
+			@media screen and (min-width: 700px){
+				font-size: 15px;
+			}
+			@media screen and (max-width: 700px){
+				display: none;
+			}
 
 			&:hover{
 				text-decoration: underline;
@@ -93,23 +120,289 @@
     position: absolute;
     @include size(100%,100%);
 }
+.title{
+		@include size(70%,30px);
+		color: $color-white;
+		font-size: 25px;
+		margin-left: 10px;
+}
+.side-video-style{
+	@include size(100%,85px);
+	border: 1px solid $color-black;
+	border-top: none;
+	background-color: $color-dark-grey;
 
-.marvel-videos{
-	@include size(70%,450px);
-	background: url('../resources/images/vrg_vup_194_marvel_thumb_720.0.0.png') no-repeat;
-	background-size: cover;
-	position: relative;
-	top: -125px;
-	left:0;
-	@include float-left;
-	z-index: 10;
-
-	&:after{
-		@extend .image-marvel-after;
-  		background-image: -webkit-linear-gradient(135deg,#dc4225,#002f4b);
-	}
-	&:hover:after{
-		background-image: -webkit-linear-gradient(135deg,#292484,#dc4225);
-		opacity: .9;
+	&:hover{
+		background-color: $color-hover;
 	}
 }
+.side-video-text{
+	background-color: $color-dark-grey;
+	@include size(61%,100%);
+	// float: right;
+	color: $color-white;
+	text-align: center;
+  	padding: 0 5px 0 5px;
+}
+.text{
+	@extend .side-video-text;
+
+	h4{
+		font-weight: normal;
+		font-size: 0.75rem;
+		// margin-top: 15px;
+
+		@media screen and (max-width: 700px){
+			font-size: 0.95rem;
+		}
+	}
+	&:hover{
+		color: $color-logo;
+		background-color: $color-hover;
+	}
+	@media screen and (max-width: 700px){
+		width: 81%;
+	}
+	@media screen and (max-width: 1025px){
+		padding: 0 0 0 5px;
+	}
+
+}
+
+
+.history-video{
+				@include size(100%,450px);
+				background: url('../resources/images/vrg_vup_194_marvel_thumb_720.0.0.png') no-repeat;
+				background-size: cover;
+				position: relative;
+				@media screen and (min-width: 1025px){
+					top: -125px;
+				}
+				@media screen and (min-width: 700px) and (max-width: 1025px){
+					height: 304px;
+				}				
+				left:0;
+				@include float-left;
+				z-index: 10;
+
+				h3{
+					  z-index: 14;
+					  color: $color-white;
+					  text-decoration: none;
+					  position: absolute;
+					  text-align: center;
+					  bottom: 80px;
+					  font-size: 30px;
+					  left: 35px;
+					  font-weight: normal;
+
+					  @media screen and (min-width: 700px) and (max-width: 1025px){
+							bottom: 10px;
+  							font-size: 22px;
+					  }
+				}
+
+				&:after{
+						@extend .image-marvel-after;
+				  		background-image: -webkit-linear-gradient(135deg,#dc4225,#002f4b);
+				  		background-image: linear-gradient(135deg,#dc4225,#002f4b);
+				  		z-index: 11;
+					}
+				&:hover:after{
+						background-image: -webkit-linear-gradient(135deg,#292484,#dc4225);
+						background-image: linear-gradient(135deg,#292484,#dc4225);
+						opacity: .9;
+					}
+				&:before{
+						text-align: center;
+
+						@extend .image-marvel-after;
+						@include size(80px,80px);
+						border-radius: 80px;
+						z-index: 12;
+						background-color: $color-dark-grey;
+						top: 160px;
+  						left: 320px;
+  						opacity: 0.3;
+  						border: 6px solid $color-white;
+				}
+				
+			}
+
+.videos{
+	@include size(100%,478px);
+
+	@media screen and (min-width: 700px) and (max-width: 1025px){
+		height: 380px;
+	}
+
+	.marvel-videos{
+			@include size(70%,478px);
+			position: relative;
+			@include float-left;
+
+			@media screen and (max-width: 700px){
+				width: 100%;
+			}
+			@media screen and (min-width: 700px) and (max-width: 1025px){
+				height: 332px;
+			}
+
+			.video-footer{
+					background-color: $color-dark-grey;
+					@include size(100%,28px);
+					position: absolute;
+  					top: 325px;
+  					text-transform: uppercase;
+
+  					@media screen and (max-width: 700px){
+  						display: none;
+  					}
+  					@media screen and (max-width: 1025px) and (min-width: 700px){
+  						top: 304px;
+  					}
+
+  					h5{
+  						margin: 6px 0 0 20px;
+  						a{
+  							color: $color-strong-grey;
+  						}
+  						a:hover{
+  							color: $color-logo;
+  							text-decoration: underline;
+  						}
+  					}
+			}
+	}
+	.side-videos{
+		@include size(30%,479px);
+	    float: right;
+	    margin-top: -125px;
+	    background-color: $color-dark-grey;
+
+		@media screen and (max-width: 700px){
+			width: 100%;
+			margin-top: -28px;
+			height: 170px;
+		}
+		@media screen and (min-width: 700px) and (max-width: 1025px){
+			  margin-top: 0px;
+			  height: 332px;
+			  overflow-x: hidden;
+		}
+		@media screen and (min-width: 1025px){
+			height: 478px;
+		}
+	}
+}
+
+.side-video1, .side-video2, .side-video3, .side-video4, .side-video5{
+	@extend .side-video-style;
+
+	@media screen and (min-width: 700px){
+		height: 94px;
+	}
+}
+.side-video6{
+	@media screen and (max-width: 700px){
+		@include size(100%, 30px);
+		background-color: $color-black;
+		font-size: 18px;
+  		text-transform: uppercase;
+  		text-align: center;
+
+  		&:hover{
+  			background-color: red;
+  		}
+
+	}
+	@media screen and (min-width: 700px){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.side-video3, .side-video4, .side-video5{
+		display: none;
+	}
+}
+
+.play{
+	opacity: .7;
+	content: '';
+    position: absolute;
+	border: 0 solid transparent;
+    border-left-color: $color-white;
+}
+
+.video-link{
+	position: relative;
+
+	&:after{
+			@extend .play;
+  			border-width: 20px 0 20px 26.66667px;
+		    display: block;
+		    z-index: 13;
+		    @media screen and (max-width: 1025px){
+		    	top: 190px;
+		    }
+		    @media screen and (min-width: 1025px){
+		    	top: 60px;
+		    }
+		    top: 190px;
+		    position: relative;
+		    left: 355px;
+		}
+}
+.hololens-video-link{
+	@include common-video;
+}
+.lg-video-link{
+	@include common-video;
+}
+.dell-video-link{
+	@include common-video;
+}
+.sparten-video-link{
+	@include common-video;
+}
+.surface3-video-link{
+	@include common-video;
+}
+
+.history-video:before{						
+					@extend .image-marvel-after;
+					@include size(80px,80px);
+					border-radius: 80px;
+					z-index: 12;
+					background-color: $color-dark-grey;
+					top: 160px;
+					left: 320px;
+					opacity: 0.3;
+					border: 6px solid $color-white;
+					position: absolute;
+				}
+
+.hololens{
+		@include side-video-img('../resources/images/vrg_vho_348_hololens_header_720.0.0.png');
+		@include each-video;
+	}
+.lg-g4{
+		@include side-video-img('../resources/images/vrg_vho_346_lg_g4_still.0.0.jpg');
+		@include each-video;
+ }
+.dell{
+		@include side-video-img('../resources/images/vrg_vho_341_venue_10_7000_still_720.0.0.png');
+		@include each-video;
+}
+.sparten{
+		@include side-video-img('../resources/images/vrg_vho_344_spartan_still_720.0.0.png');
+		@include each-video;
+}
+.surface3{
+		@include side-video-img('../resources/images/vrg_vho_342_surface_3_header_720.0.0.png');
+		@include each-video;
+}
+
+
+ 

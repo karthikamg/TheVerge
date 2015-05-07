@@ -16,6 +16,7 @@ body{
 	overflow-y: scroll;
 	font-family: $header-link-font;
 	font-style: normal;
+	font-weight: normal;
 
 	@media screen and (min-width: 600px){
 		font-size: $body-font3;
@@ -39,18 +40,4 @@ ul{
 h2{
 	color: $color-white;
 	font-family: $heading2-font;
-	position: absolute;
-	z-index: 2;  
-	text-align: center;
-    top: 15px;
-    font-weight: normal;   
-    line-height: 1.2;
-    padding: 12px;
-
-    @media screen and (min-width: 1025px){
-    	font-size: 1.3rem;
-    }
-    @media screen and (max-width: 1025px){
-    	white-space: pre-wrap;
-    }
 }

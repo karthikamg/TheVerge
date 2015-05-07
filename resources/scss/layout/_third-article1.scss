@@ -1,0 +1,109 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+
+.first-article{
+	background-color: $color-white;
+	border: 1px solid $color-grey;
+	position: relative;
+	@include size(100%,825px);
+
+	ul{
+		@include size(100%,100%);
+		@include inline-block;
+
+		li{
+			display: block;
+		}
+	}
+}
+
+.nintendo{
+	@include box-style(50%);
+	border-top: none;	
+	border-left: none;
+	border-bottom: none;
+	@include each-article(-125px);
+
+	&:after{
+		@include article-edge(0px);
+	}
+}
+.destiny{
+	@include box-style(40%);
+	border-top: none;	
+	border-left: none;
+	border-bottom: none;
+	@include each-article(-125px);
+
+	&:after{
+		@include article-edge(0px);
+	}
+	&:before{
+		@include article-edge(0px);
+		float: right;
+		border-width: 1px 0 0 1px;
+		left: 0px;
+	}
+}
+.info-archive{
+	@include box-style(30%);
+	border: none;
+	@include each-article(-125px);
+
+	&:after{
+		@include article-edge(0px);
+	}
+	&:before{
+		@include article-edge(0px);
+		border-width: 1px 0 0 1px;
+		left: 0px;
+	}
+}
+
+.google-plan{
+	@include box-style(50%);	
+	border-left: none;
+	border-bottom: none;
+	@include each-article(50%);
+	float: none;
+
+	&:after{
+		@include article-edge(0%);
+	}
+}
+.tldr{
+	@include box-style(60%);	
+	border-left: none;
+	border-bottom: none;
+	@include each-article(-10%);
+	right: 33%;
+
+	&:after{
+		@include article-edge(0%);
+	}
+	&:before{
+		@include article-edge(0px);
+		border-width: 1px 0 0 1px;
+		left: -3px;
+	}
+}
+.tesla-plan{
+	@include box-style(70%);	
+	border-left: none;
+	border-bottom: none;
+	@include each-article(-20%);
+	float: none;
+	left: 66.8%;
+
+	&:after{
+		@include article-edge(0%);
+	}
+	&:before{
+		@include article-edge(0px);
+		border-width: 1px 0 0 1px;
+		left: -3px;
+	}
+}
+
