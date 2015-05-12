@@ -72,16 +72,18 @@
 }
 
 @mixin box-style($height: 50%){
-	@include size(33.2%,$height);
+	@include size(29%,$height);
 	border: 1px solid $color-grey;
+	padding: 1.3rem;
 }
 
 @mixin article-edge($top: 0){
 	content: "";
     position: absolute;
     top: $top;
-    left: 332px;
-    border: 1px solid #919191;
+    // left: 332px;
+    left: 97.5%;
+    border: 1px solid $color-strong-grey;
     border-width: 1px 1px 0 0;
     display: block;
     width: 8px;
@@ -93,4 +95,212 @@
 	position: relative;
 	top: $top;
 	@include float-left;
+}
+@mixin article-before($left: -3px){
+	@include article-edge(0px);
+	border-width: 1px 0 0 1px;
+	left: $left;
+}
+
+@mixin section-divide($left: 0px){
+	position: absolute;
+    content: '';
+    border: 1px solid #919191;
+    border-width: 0px 0px 1px 1px;
+    bottom: -32px;
+    z-index: 25;
+    left: $left;
+    height: 8px;
+}
+@mixin gradient-image-style($width: 100%,$height: 100%){
+	@include size($width,$height);
+	background-size: cover;
+}
+@mixin image-after($width: 100%,$height: 100%){
+	opacity: .7;
+	content: '';
+	position: absolute;
+	@include size($width,$height);
+}
+@mixin article-image-link($box-style: 0%,$top: 0px, $left: 0px){
+	@include box-style($box-style);
+	border: none;
+	border-right: 1px solid $color-grey;
+	position: absolute;
+	left: $left;
+	top: $top;
+}
+@mixin bg-img($path: '../resources/images/cannes.jpg', $width: 0px, $height: 0px){
+	background: url($path) no-repeat;
+	background-size: cover;
+	@include size($width,$height);
+	@include float-left;
+	position: relative;
+}
+@mixin databreaker($path: '../resources/images/cannes.jpg'){
+	@include bg-img($path,50%,100%);
+
+	h2{
+		@include section1-image-text;
+
+		@media screen and (max-width: 700px){
+			font-size: 1.3rem;
+		}
+		@media screen and (min-width: 700px){
+			font-size: 2.5rem;
+		}
+	}
+	.data-breaker-author{
+			position: absolute;
+			top: 180px;
+			padding-left: 40px;
+			color: $color-white;
+			z-index: 1;
+	}
+}
+
+@mixin section1-image-text{
+  position: absolute;
+  z-index: 2;  
+  text-align: center;
+  top: 15px;
+  font-weight: normal;   
+  line-height: 1.2;
+  padding: 12px;
+
+  @media screen and (min-width: 1025px){
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 1025px){
+    white-space: pre-wrap;
+  }
+}
+
+@mixin article2-content-style($top: 48%, $left: 0%){
+	display: initial;
+	top: $top;
+	left: $left;
+	width: 45.5%;
+}
+
+@mixin update-seemore-link{
+	color: $color-white;
+	width: 65px;
+	height: auto;
+	position: relative;
+	content: '';
+}
+@mixin update-seemore-after{
+	content: '';		
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	border-left-color: $color-black;
+	border-width: 9px 0 9px 8px;
+	position: absolute;
+}
+
+@mixin h3{
+	position: absolute;
+    z-index: 25;
+    padding: 8px;
+    top: 55px;
+    color: $color-white;
+    font-weight: normal;
+}
+
+@mixin multi-content($path1: '../resources/images/cannes.jpg',$path2: '../resources/images/cannes.jpg',$path3: '../resources/images/cannes.jpg'){
+	content: '';
+	border-top: 3px solid $color-black;
+	@include size(100%, auto);
+	position: absolute;
+	z-index: 21;
+	background-color: $color-ivory;
+	font-size: 15px;
+
+	a{
+			.multi-content1{
+			@include bg-img($path1,30%,200px);
+			// left: 5%;
+
+			&:after{
+				@include image-after;
+				@include linear-gradient($color6-sandal,$color3-navyblue);
+			}
+			&:hover:after{
+				@include linear-gradient($color4-greenlake,$color3-navyblue);
+			}
+			h3{
+				@include h3;
+			}
+		}
+	}
+	a{
+		.multi-content2{
+		@include bg-img($path2,30%,200px);
+		// left: 5%;
+
+		&:after{
+			@include image-after;
+			@include linear-gradient($color5-pink,$color3-navyblue);
+		}
+		&:hover:after{
+			@include linear-gradient($color1-offnavyblue,$color2-darkpink);
+		}
+		h3{
+			@include h3;
+			}
+		}
+	}
+	a{
+		.multi-content3{
+		@include bg-img($path3,30%,200px);
+		// left: 5%;
+
+		&:after{
+			@include image-after;
+			@include linear-gradient($color4-greenlake,$color1-offnavyblue);
+		}
+		&:hover:after{
+			@include linear-gradient($color2-darkpink,$color3-navyblue);
+		}
+		h3{
+				@include h3;
+			}
+		}
+	}
+	
+	}
+
+@mixin flap-over($bg-color: $color-logo, $fold-color: $color-white){
+	content: '';
+	width: 650px;
+	padding: 0.2rem;
+	background-color: $bg-color;
+	z-index: 2;
+	top: 130px;
+	position: absolute;
+	left: -25px;
+	color: $color-white;
+	text-transform: uppercase;
+
+	h3{
+		font-size: 15px;
+		margin-left: 15px;
+		font-style: italic;
+	}
+
+	&:before{
+		border: 0 solid transparent;
+		@include image-after(0,0);
+		border-right-color: $fold-color;
+  		border-width: 0 20px 20px 0;
+  		position: absolute;
+  		top: 100%;
+  		left: 0;
+	}
+	p{
+		font-size: 11px;
+		font-style: normal;
+	}
 }

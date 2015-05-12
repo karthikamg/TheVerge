@@ -26,32 +26,9 @@
     @include float-left;
     z-index: 1;  
 }
-.image-after{
-	opacity: .7;
-	content: '';
-  position: absolute;
-  @include size(100%,100%);
-}
 .image-hover-after{
 	opacity: .9;
 }
-.section1-image-text{
-  position: absolute;
-  z-index: 2;  
-  text-align: center;
-  top: 15px;
-  font-weight: normal;   
-  line-height: 1.2;
-  padding: 12px;
-
-  @media screen and (min-width: 1025px){
-    font-size: 1.3rem;
-  }
-  @media screen and (max-width: 1025px){
-    white-space: pre-wrap;
-  }
-}
-
 
 .avengers{
 	@extend .el;
@@ -59,12 +36,12 @@
 	background-image: url("../resources/images/avengers-age-of-ultron-comic-con-14-poster-full-hd.0.0.jpg");
 	
   h2{
-    @extend .section1-image-text;
+    @include section1-image-text;
   }
 
 	&:after{
-		@extend .image-after;
-    @include linear-gradient($color1,$color2);
+		@include image-after;
+    @include linear-gradient($color1-offnavyblue,$color2-darkpink);
 	}  
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -73,8 +50,7 @@
   		font-size: 2.5rem;
   	}
   	@media screen and (max-width: 700px){
-  		@include size(100%,180px);
-  		background-size: cover;  		
+      @include gradient-image-style(100%,180px); 		
   	}
   	@media screen and (min-width: 700px) and (max-width: 1025px){
   		background-size: cover;
@@ -92,19 +68,18 @@
 	background-image: url("../resources/images/GettyImages-472022182.0.jpg"); 
 
   h2{
-    @extend .section1-image-text;
+    @include section1-image-text;
   }
 
 	&:after{
-		@extend .image-after;
-  	@include linear-gradient($color3,$color4);
+		@include image-after;
+  	@include linear-gradient($color3-navyblue,$color4-greenlake);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
   	} 
   	@media screen and (max-width: 700px){
-  		@include size(100%,180px);
-  		background-size: cover;
+  		@include gradient-image-style(100%,180px);
   	}
   	@media screen and (min-width: 700px) and (max-width: 1025px){
   		background-size: cover;
@@ -121,19 +96,18 @@
 	background-image: url("../resources/images/GettyImages-461180118.0.jpg"); 
 
 h2{
-    @extend .section1-image-text;
+    @include section1-image-text;
   }
 
 	&:after{
-		@extend .image-after;
-  	@include linear-gradient($color5,$color6);
+		@include image-after;
+  	@include linear-gradient($color1-offnavyblue,$color5-pink);
 	} 
 	&:hover:after{
   		@extend  .image-hover-after;
   	} 
   	@media screen and (max-width: 700px){
-  		@include size(100%,180px);
-  		background-size: cover;
+  		@include gradient-image-style(100%,180px);
   	}
   	@media screen and (min-width: 700px) and (max-width: 1025px){
   		background-size: cover;
@@ -150,19 +124,18 @@ h2{
 	background-image: url("../resources/images/The_Last_of_Us__Remastered_20150312202125_1.0.0.jpg"); 
 
 h2{
-    @extend .section1-image-text;
+    @include section1-image-text;
   }
 
 	&:after{
-		@extend .image-after;
-  	@include linear-gradient($color7,$color3);
+		@include image-after;
+  	@include linear-gradient($color6-sandal,$color3-navyblue);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
   	}
   	@media screen and (max-width: 1025px){
-  		@include size(500px,180px);
-  		background-size: cover;
+  		@include gradient-image-style(500px,180px);
   		font-size: 0.7rem;
   	}
 }
@@ -172,12 +145,12 @@ h2{
 	background-image: url("../resources/images/weekender-graphics_apple.0.jpg"); 
 
   h2{
-    @extend .section1-image-text;
+    @include section1-image-text;
   }
 
 	&:after{
-		@extend .image-after;
-  	@include linear-gradient($color8,$color2);
+		@include image-after;
+  	@include linear-gradient($color7-lightyellow,$color2-darkpink);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
@@ -186,8 +159,7 @@ h2{
   		font-size: 2.5rem;
   	}
   	@media screen and (max-width: 1025px){
-  		@include size(500px,180px);
-  		background-size: cover;
+  		@include gradient-image-style(500px,180px);
 
   		h2{
   			font-size: 1.1rem;
@@ -200,19 +172,18 @@ h2{
 	background-image: url("../resources/images/GettyImages-461496224.0.jpg"); 
 
   h2{
-    @extend .section1-image-text;
+    @include section1-image-text;
   }
 
 	&:after{
-		@extend .image-after;
-  	@include linear-gradient($color7,$color6);
+		@include image-after;
+  	@include linear-gradient($color6-sandal,$color5-pink);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
   	}
   	@media screen and (max-width: 1025px){
-  		@include size(500px,180px);
-  		background-size: cover;
+  		@include gradient-image-style(500px,180px);
   		font-size: 0.8rem;
   		top: 0;
   	}
@@ -223,19 +194,18 @@ h2{
 	background-image: url("../resources/images/DSC_8244-2040w.0.0.jpg"); 
 
   h2{
-    @extend .section1-image-text;
+    @include section1-image-text;
   }
 
 	&:after{
-		@extend .image-after;
-  	@include linear-gradient($color4,$color2);
+		@include image-after;
+  	@include linear-gradient($color4-greenlake,$color2-darkpink);
 	}
 	&:hover:after{
   		@extend  .image-hover-after;
   	}
   	@media screen and (max-width: 1025px){
-  		@include size(500px,180px);
-  		background-size: cover;
+  		@include gradient-image-style(500px,180px);
   		font-size: 0.8rem;
   		top: 0;
   	}
@@ -295,7 +265,6 @@ h2{
 		overflow-y: hidden;
 		max-width: 1370px;
     @include nowrap;
-		// white-space: nowrap;
 
 		li{
 			display: inline-block;

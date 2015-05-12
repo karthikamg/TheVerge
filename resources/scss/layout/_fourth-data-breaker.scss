@@ -1,0 +1,45 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+
+.data-breaker{
+	@include size(100%, 300px);
+	border: 1px solid $color-grey;
+
+	// @media screen and (max-width: 600px){
+	// 	overflow-x: scroll;
+	// 	overflow-y : hidden;
+	// 	width: 600px;
+	// 	max-width: 2000px;
+	// 	@include nowrap;
+	// }
+	@media screen and (min-width: 600px) and (max-width: 700px){
+		margin-top: 35px;
+	}
+	@media screen and (min-width: 700px) and (max-width: 1025px){
+		margin-top: -125px;
+	}
+
+	a{
+		.image-cannes{
+			@include databreaker('../resources/images/cannes.jpg');
+
+			&:after{
+				@include image-after;
+				@include linear-gradient($color6-sandal,$color3-navyblue);
+			}
+		}
+	}
+	a{
+		.image-ipad{
+			@include databreaker('../resources/images/best-stylus-buy-timn-5310.0.0.jpg');
+
+			&:after{
+				@include image-after;
+				@include linear-gradient($color2-darkpink,$color1-offnavyblue);
+			}
+		}
+	}
+}
+

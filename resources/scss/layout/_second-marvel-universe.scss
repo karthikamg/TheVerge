@@ -10,6 +10,9 @@
 	@media screen and (min-width: 700px) and (max-width: 1025px){
 		height: 380px;
 	}
+	@media screen and (max-width: 600px){
+		height: 700px;
+	}
 }
 
 .color-white{
@@ -88,7 +91,7 @@
 		}
 		
 		.title-watch{
-			color: #fa4b2a;
+			color: $color-logo;
 			font-size: 25px;
 			margin-left: 10px;
 
@@ -203,7 +206,7 @@
 				}
 
 				&:after{
-						@extend .image-marvel-after;
+						@include image-after;
 				  		background-image: -webkit-linear-gradient(135deg,#dc4225,#002f4b);
 				  		background-image: linear-gradient(135deg,#dc4225,#002f4b);
 				  		z-index: 11;
@@ -216,7 +219,7 @@
 				&:before{
 						text-align: center;
 
-						@extend .image-marvel-after;
+						@include image-after;
 						@include size(80px,80px);
 						border-radius: 80px;
 						z-index: 12;
@@ -371,7 +374,7 @@
 }
 
 .history-video:before{						
-					@extend .image-marvel-after;
+					@include image-after;
 					@include size(80px,80px);
 					border-radius: 80px;
 					z-index: 12;

@@ -1,0 +1,158 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+@import 'third-article1';
+
+
+
+.second-article{
+    @media screen and (min-width: 600px){
+      @include size(100%,1025px);
+      position: relative;
+
+    @media screen and (min-width: 1025px){
+          border: 1px solid $color-grey;
+       }
+    }
+    @media screen and (max-width: 600px){
+      display: none;
+  }
+}
+
+.second-article-short{
+  @media screen and (max-width: 600px){
+      @include size(100%, auto);
+
+      ul{
+        li{
+          width: 100%;
+          height: 100px;
+          padding: 1rem;
+          border: 1px solid $color-dark-grey;
+          border-top: none; 
+        }
+      }
+  }
+  @media screen and (min-width: 600px){
+    display: none;
+  }
+}
+
+
+.trending-discussion{
+  @extend .tldr-mult;
+  width: 30%;
+  border: none;
+  left: 66%;
+  top: 0px;
+
+  &:after{
+  	display: none;
+  }
+  &:before{
+  	left: 0;
+  	width: 8px;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1025px){
+  		@include article2-content-style(94%);
+  		border: 1px solid $color-grey;
+  }
+}
+.big-ren{
+  @include article-image-link(55%,41%,33%);
+  float: left;
+  border-top: 1px solid $color-grey;
+
+   @media screen and (min-width: 600px) and (max-width: 1025px){
+  		@include article2-content-style;
+  		height: 42%;
+  	}
+
+  &:before{
+  	  @include article-edge;
+	  left: 0;
+  }
+
+  &:after{	  
+	  @include article-edge;
+	  width: 0px;
+	  left:100.2%;
+  }
+}
+.verge-playlist{
+  @extend .fb-img;
+  @include article-image-link(39%,57%,66%);
+  border-top: 1px solid $color-grey;
+  border-right: none;
+
+  @media screen and (min-width: 600px) and (max-width: 1025px){
+  		@include article2-content-style(94%,50%);
+  	}
+}
+
+.apple-watch{
+	@extend .hospital-staff;
+
+	 @media screen and (min-width: 600px) and (max-width: 1025px){
+  		height: 45%;
+  	}
+}
+.online-gaming{
+	@extend .nintendo-gain;
+
+	&:before{
+		left: 0;
+	}
+	&:after{
+		width: 8px;
+		left: 98%;
+	}
+}
+.google-play{
+	@extend .instagram-plan;
+	 @media screen and (min-width: 600px) and (max-width: 1025px){
+  		top: 48%;
+  		left: 50%;
+  	}
+}
+.top-link{
+  position: absolute;
+  top: -1px;
+  padding: 1px 5px;
+  background-color: $color-logo;
+  color: white;
+  text-transform: uppercase;
+}
+.updates{
+	background-color: $color-black;
+	@include update-seemore-link;
+	z-index: 1;
+	@include float-left;
+
+	@media screen and (min-width: 600px) and (max-width: 1025px){
+		width: 90px;
+	}
+
+	&:after{
+		display: block;
+		@include update-seemore-after;
+		top: 0;
+		left: 100%;
+
+		@media screen and (min-width: 600px) and (max-width: 1025px){
+			border-width: 11px 0 11px 8px;
+		}		
+	}
+}
+.see-all{
+	background-color: $color-logo;
+	padding-left: 9px;
+	@include update-seemore-link;
+
+	&:after{
+		@include update-seemore-after;
+		border-left-color: $color-logo;
+	}
+}

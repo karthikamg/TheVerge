@@ -7,7 +7,7 @@
 	background-color: $color-white;
 	border: 1px solid $color-grey;
 	position: relative;
-	@include size(100%,825px);
+	@include size(100%,1025px);
 
 	ul{
 		@include size(100%,100%);
@@ -17,93 +17,267 @@
 			display: block;
 		}
 	}
-}
 
-.nintendo{
-	@include box-style(50%);
-	border-top: none;	
-	border-left: none;
-	border-bottom: none;
-	@include each-article(-125px);
-
-	&:after{
-		@include article-edge(0px);
+	@media screen and (max-width: 700px){
+		top: 175px;
+		height: 1125px;
+	}
+	@media screen and (max-width: 600px){
+		display: none;
 	}
 }
-.destiny{
-	@include box-style(40%);
-	border-top: none;	
-	border-left: none;
-	border-bottom: none;
-	@include each-article(-125px);
+.first-article-short{
+	background-color: $color-white;
+	position: relative;
+	@include size(100%,250px);
+	color: $color-dark-grey;
 
-	&:after{
-		@include article-edge(0px);
+	@media screen and (max-width: 600px){
+		height: 525px;
+	}
+
+	ul{
+		display: block;
+
+		li{
+			@include size(100%, 100px);
+			padding: 1rem;
+		}
+	}
+
+	@media screen and (min-width: 600px){
+		display: none;
+	}
+}
+
+.short-image{
+	@include float-left;
+	@include size(20%, 100%);
+	background-color: grey;
+
+	.short-image-fill{
+		@include size(100%, 100%);
+	}
+}
+.short-data{
+	font-size: 20px;
+	  margin-left: 21%;
+
+	.short-author{
+		font-size: 13px;
+		padding-right: 8px;
+		border-right: 1px solid $color-dark-grey;
+		font-weight: bold;
+	}
+	.short-time{
+		font-style: normal;
+		font-size: 15px;
+	}
+}
+
+.hospital-staff{
+	@include article-image-link(47%);
+
+	@media screen and (min-width: 1025px){
+		&:after{
+			@include article-edge(0px);
+		}
+	}
+	@media  screen and (max-width: 1025px){
+		@include size(45.5%,40%);
+	}
+}
+
+.nintendo-gain{
+	@include article-image-link(37%,0px,33%);
+
+	@media screen and (min-width: 1025px){
+		&:after{
+			@include article-edge(0px);
+			left: 653px;
+		}
+		&:before{
+			@include article-edge(0px);
+			float: right;
+			border-width: 1px 0 0 1px;
+			left: 315px;
+		}
+	}
+
+	@media  screen and (max-width: 1025px){
+		@include size(45.5%,40%);
+		left: 50%;
+	}
+}
+
+.fb-img{
+	@media screen and (min-width: 1025px){
+	width: 30%;
+	@include article-image-link(27%,0px,66%);
+	border-right: none;
+
+	&:before{
+		@include article-before(0px);
+		}
+	}
+	@media screen and (max-width: 1025px){
+		display: none;
+	}
+}
+
+.instagram-plan{
+	@include article-image-link(46%,50%,0px);
+	border-top: 1px solid $color-grey;
+
+	@media  screen and (max-width: 1025px){
+		@include size(45.5%,40%);
+		top: 44%;
+	}
+}
+
+.tldr-mult{
+  	@include article-image-link(55%,41%,33%);
+	border-top: 1px solid $color-grey;
+  	text-align: center;
+
+	@media screen and (min-width: 1025px){
+		&:after{
+			@include article-edge(0%);
+			width: 0;
+			left: 100.2%;
+		}
 	}
 	&:before{
-		@include article-edge(0px);
-		float: right;
-		border-width: 1px 0 0 1px;
-		left: 0px;
+		@include article-before(0);
+		width: 0;
 	}
-}
-.info-archive{
-	@include box-style(30%);
-	border: none;
-	@include each-article(-125px);
-
-	&:after{
-		@include article-edge(0px);
-	}
-	&:before{
-		@include article-edge(0px);
-		border-width: 1px 0 0 1px;
-		left: 0px;
+	@media screen and (max-width: 1025px){
+		display: none;
 	}
 }
 
-.google-plan{
-	@include box-style(50%);	
-	border-left: none;
-	border-bottom: none;
-	@include each-article(50%);
-	float: none;
+.uber-google{
+	float: left;
+	@include article-image-link(67%,30%,66%);
+	width: 30%;	
+	border-top: 1px solid $color-grey;
+	border-right: none;
 
-	&:after{
-		@include article-edge(0%);
-	}
-}
-.tldr{
-	@include box-style(60%);	
-	border-left: none;
-	border-bottom: none;
-	@include each-article(-10%);
-	right: 33%;
-
-	&:after{
-		@include article-edge(0%);
-	}
-	&:before{
-		@include article-edge(0px);
-		border-width: 1px 0 0 1px;
-		left: -3px;
-	}
-}
-.tesla-plan{
-	@include box-style(70%);	
-	border-left: none;
-	border-bottom: none;
-	@include each-article(-20%);
-	float: none;
-	left: 66.8%;
-
-	&:after{
-		@include article-edge(0%);
-	}
-	&:before{
-		@include article-edge(0px);
-		border-width: 1px 0 0 1px;
-		left: -3px;
+	@media screen and (max-width: 1025px){
+		@include size(45.5%,40%);
+		left: 50%;
+		top: 44%;
 	}
 }
 
+.article-headertext-common{
+	font-size: 27px;
+    color: $color-black;
+
+    &:hover{
+    	color: $color-logo;
+    	text-decoration: underline;
+    }
+}
+.article-authordate-common{
+	@include size(100%,auto);
+	padding: 5px 5px 5px 0;
+
+	.article-author{
+		@extend .article-headertext-common;
+		font-size: 11px;
+		padding-right: 5px;
+		border-right: 1px solid $color-black;
+	}
+	.article-date{
+		  font-size: 11px;
+		  color: $color-strong-grey;
+		  font-style: normal;
+	}
+	a{
+		.article-comment{
+		@include float-right;
+	 	font-size: $header-font5;
+	 	padding: .1rem .1rem .1rem;
+	    sline-height: .8;
+	    background-color: $color-strong-grey;
+	    position: relative;
+	    color: $color-white;
+
+	    &:before{
+	    	  border: 0 solid transparent;
+  			  border-top-color: $color-black;
+              border-width: 5px 7px 0px 0px;
+              position: absolute;
+              content:'';
+              top: 19px;
+              left: 8px;
+	    	}
+		}
+	}	
+}
+
+.link{
+	color: $color-logo;
+
+	 &:hover{
+	 	text-decoration: underline;
+	 }
+}
+
+.article-content{
+	margin-top: 10px;
+	a{
+		.article-image{
+			@include size(100%,150px);
+		}
+	}	
+	.bignews{
+		@extend .link;
+		font-style: italic;
+		font-size: 30px;
+
+		@media screen and (max-width: 1025px){
+			font-size: 20px;
+		}
+	}
+}
+
+.article-text{
+		padding: 10px 0 10px 0;
+		position: relative;
+		top: 0;
+
+		@media screen and (max-width: 1025px){
+			font-size: 15px;
+		}
+	}
+
+.nintendo-article-text{
+	@extend .article-text;
+	@media screen and (min-width: 1025px){
+		&:before{
+				@include section-divide(317px);
+				top: 100px;
+			}
+			&:after{
+			  @include section-divide(657px);
+			  top: 100px;
+			}
+		}
+}
+
+.tldr-data{
+	padding: 10px;
+	.tldr-date-content{
+		color: $color-strong-grey;
+		font-size: 13px;
+	}
+.tdlr-content{
+	font-size: 20px;
+	&:hover{
+		color: $color-logo;
+		text-decoration: none;
+	}
+}
+}

@@ -1,0 +1,141 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+
+.storystreams{
+	@media screen and (min-width: 600px){
+		@include size(100%, 675px);
+		position: relative;
+
+		@media screen and (min-width: 600px) and (max-width: 1025px){
+			top: 550px
+		}
+
+	.most-recent-storystreams{
+		@include size(100%,68px);
+		text-align: left;
+		text-transform: uppercase;
+		color: $color-white;
+		font-size: 22px;
+		z-index: 20;
+		margin-top: -70px;
+
+		.most-recent-image{
+			@include size(100px, auto);
+			margin-left: 15px;
+		}
+		.most-recent-text{
+			@include float-left;
+		    position: absolute;
+		    left: 25px;		   
+		    top: 15px;
+		    text-align: center;
+		    transform: rotate(-10deg);
+		    -webkit-transform: rotate(-10deg);		    
+		}
+		.storystreams{
+			@include size(auto, auto);
+		    background-color: $color-black;
+		    position: absolute;
+		    top: 25px;
+		    left: 105px;
+		    padding: 0.5rem;
+		    font-style: italic;
+			}
+		}
+	}
+	@media screen and (max-width: 600px){
+		display: none;
+	}
+	
+}
+
+
+.multi-link{
+	@include size(100%, auto);
+	display: block;
+}
+.multi-content-sec1{
+	@include multi-content('../resources/images/first-click-spain.0.0.png','../resources/images/apple-watch-notif-stock-IMG_3397_copy.0.0.jpg','../resources/images/watchlead.0.0.jpg');
+}
+.multi-content-sec2{
+	@include multi-content('../resources/images/ef989fe2-5c9b-4437-ad74-eebf34fbb625.0.0.jpg','../resources/images/vrg_vho_348_hololens_header_720.0.0.png','../resources/images/hololensehandson5_1020.0.0.jpg');
+	top: 270px;
+	border-top: 3px solid $color-grey;
+}
+.multi-content-sec3{
+	@include multi-content('../resources/images/Screen_Shot_2015-05-06_at_12.12.54_PM.0.0.png','../resources/images/Nexus-Family.0.0.jpg','../resources/images/Screen_Shot_2015-04-22_at_4.45.59_PM.0.0.png');
+	top: 470px;
+	border-top: 3px solid $color-grey;
+}
+
+.flap-over1{
+	@include flap-over($color-lightyellow,$color-darkyellow);
+}
+.flap-over2{
+	@include flap-over($color-logo,$color-darkorange);
+}
+.flap-over3{
+	@include flap-over($color-skyblue,$color-strong-skyblue);
+}
+
+.left-scroll-move{
+	@include size(5%, 100%);
+	@include float-left;
+}
+.lright-scroll-move{
+	@include size(5%, 100%);
+	@include float-right;
+}
+.scroll{
+	content: '';		
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	position: relative;
+}
+.left-scroll{
+	@extend .scroll;
+	border-width: 15px 15px 15px 8px;
+	top: 90px;	
+	border-right-color: $color-grey;	
+
+	&:after{
+		@include image-after(5px, 6px);
+		background-color: $color-grey;
+		left: 15px;
+  		bottom: -8px;
+  		height: 15px;
+	}
+}
+.right-scroll{
+	@extend .scroll;
+	border-left-color: $color-strong-grey;
+	border-width: 15px 0px 15px 14px;
+	@include float-right;
+	top: 65px;
+	right: 15px;
+
+	&:before{
+		@include image-after(5px, 6px);
+		background-color: $color-dark-grey;
+		left: -19px;
+  		bottom: -8px;
+  		height: 15px;
+	}
+}
+
+.footer{
+	height: auto;
+	padding: 1rem;
+	background-color: $color-ivory;
+	border: 1px solid $color-grey;
+	text-align: center;
+	text-transform: uppercase;
+	color: $color-red;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}

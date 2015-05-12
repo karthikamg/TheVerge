@@ -42,14 +42,15 @@ body {
 /* line 32, ../resources/scss/helpers/_base.scss */
 a {
   text-decoration: none;
+  color: black;
 }
 
-/* line 36, ../resources/scss/helpers/_base.scss */
+/* line 37, ../resources/scss/helpers/_base.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 40, ../resources/scss/helpers/_base.scss */
+/* line 41, ../resources/scss/helpers/_base.scss */
 h2 {
   color: white;
   font-family: Adelle, Georgia, serif;
@@ -182,7 +183,7 @@ h2 {
 }
 
 @media screen and (min-width: 700px) {
-  /* line 96, ../resources/scss/layout/_header.scss */
+  /* line 95, ../resources/scss/layout/_header.scss */
   .jack {
     display: inline-block;
     vertical-align: middle;
@@ -195,7 +196,7 @@ h2 {
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) and (min-width: 700px) {
-  /* line 96, ../resources/scss/layout/_header.scss */
+  /* line 95, ../resources/scss/layout/_header.scss */
   .jack {
     margin-top: 0;
     width: 84%;
@@ -203,26 +204,26 @@ h2 {
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 107, ../resources/scss/layout/_header.scss */
+  /* line 106, ../resources/scss/layout/_header.scss */
   .jack img {
     float: left;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1045px) and (min-width: 700px) {
-  /* line 107, ../resources/scss/layout/_header.scss */
+  /* line 106, ../resources/scss/layout/_header.scss */
   .jack img {
     display: none;
   }
 }
 
 @media screen and (max-width: 700px) {
-  /* line 96, ../resources/scss/layout/_header.scss */
+  /* line 95, ../resources/scss/layout/_header.scss */
   .jack {
     display: none;
   }
 }
 
-/* line 120, ../resources/scss/layout/_header.scss */
+/* line 119, ../resources/scss/layout/_header.scss */
 .trend-nw {
   border: 1px solid black;
   height: 63px;
@@ -230,18 +231,18 @@ h2 {
   padding-left: 10px;
 }
 @media screen and (max-width: 1045px) {
-  /* line 120, ../resources/scss/layout/_header.scss */
+  /* line 119, ../resources/scss/layout/_header.scss */
   .trend-nw {
     width: 98%;
   }
 }
 @media screen and (min-width: 1045px) {
-  /* line 120, ../resources/scss/layout/_header.scss */
+  /* line 119, ../resources/scss/layout/_header.scss */
   .trend-nw {
     width: 83.7%;
   }
 }
-/* line 132, ../resources/scss/layout/_header.scss */
+/* line 131, ../resources/scss/layout/_header.scss */
 .trend-nw .trend-text {
   float: left;
   width: 92%;
@@ -250,33 +251,33 @@ h2 {
   line-height: 1.7;
 }
 @media screen and (max-width: 1025px) and (min-width: 700px) {
-  /* line 132, ../resources/scss/layout/_header.scss */
+  /* line 131, ../resources/scss/layout/_header.scss */
   .trend-nw .trend-text {
     height: 38px;
   }
 }
-/* line 142, ../resources/scss/layout/_header.scss */
+/* line 141, ../resources/scss/layout/_header.scss */
 .trend-nw .trend-text header {
   color: red;
   font-size: 13px;
 }
-/* line 146, ../resources/scss/layout/_header.scss */
+/* line 145, ../resources/scss/layout/_header.scss */
 .trend-nw .trend-text h3 {
   font-size: .85rem;
   font-weight: normal;
   color: black;
 }
 @media screen and (max-width: 1025px) and (min-width: 700px) {
-  /* line 146, ../resources/scss/layout/_header.scss */
+  /* line 145, ../resources/scss/layout/_header.scss */
   .trend-nw .trend-text h3 {
     font-size: 0.75rem;
   }
 }
-/* line 155, ../resources/scss/layout/_header.scss */
+/* line 154, ../resources/scss/layout/_header.scss */
 .trend-nw .trend-text h3:hover {
   color: red;
 }
-/* line 160, ../resources/scss/layout/_header.scss */
+/* line 159, ../resources/scss/layout/_header.scss */
 .trend-nw .trend-drop-down {
   width: 8%;
   height: 58px;
@@ -284,7 +285,7 @@ h2 {
   background-color: #ddd;
   position: relative;
 }
-/* line 166, ../resources/scss/layout/_header.scss */
+/* line 165, ../resources/scss/layout/_header.scss */
 .trend-nw .trend-drop-down:after {
   border: 0 solid transparent;
   border-top-color: black;
@@ -294,18 +295,18 @@ h2 {
   top: 30px;
   left: 15px;
 }
-/* line 175, ../resources/scss/layout/_header.scss */
+/* line 174, ../resources/scss/layout/_header.scss */
 .trend-nw .trend-drop-down:hover:after {
   border-top-color: red;
 }
 @media screen and (max-width: 1025px) and (min-width: 700px) {
-  /* line 160, ../resources/scss/layout/_header.scss */
+  /* line 159, ../resources/scss/layout/_header.scss */
   .trend-nw .trend-drop-down {
     height: 63px;
   }
 }
 
-/* line 184, ../resources/scss/layout/_header.scss */
+/* line 183, ../resources/scss/layout/_header.scss */
 .new-article {
   background-color: #fa4b2a;
   color: white;
@@ -315,37 +316,35 @@ h2 {
   padding: 0 2px 0 4px;
 }
 @media screen and (max-width: 700px) {
-  /* line 184, ../resources/scss/layout/_header.scss */
+  /* line 183, ../resources/scss/layout/_header.scss */
   .new-article {
     width: 25%;
   }
 }
 @media screen and (max-width: 1025px) and (min-width: 700px) {
-  /* line 184, ../resources/scss/layout/_header.scss */
+  /* line 183, ../resources/scss/layout/_header.scss */
   .new-article {
     width: 14%;
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 184, ../resources/scss/layout/_header.scss */
+  /* line 183, ../resources/scss/layout/_header.scss */
   .new-article {
-    height: 60px;
-    width: 14.1%;
     width: 14.1%;
     height: 60px;
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 184, ../resources/scss/layout/_header.scss */
+  /* line 183, ../resources/scss/layout/_header.scss */
   .new-article {
     height: 60px;
   }
 }
-/* line 208, ../resources/scss/layout/_header.scss */
+/* line 204, ../resources/scss/layout/_header.scss */
 .new-article:hover {
   background-color: red;
 }
-/* line 212, ../resources/scss/layout/_header.scss */
+/* line 208, ../resources/scss/layout/_header.scss */
 .new-article strong {
   line-height: 1;
   font-size: 2.5rem;
@@ -353,54 +352,54 @@ h2 {
   margin-top: 3px;
 }
 @media screen and (max-width: 1025px) and (min-width: 700px) {
-  /* line 212, ../resources/scss/layout/_header.scss */
+  /* line 208, ../resources/scss/layout/_header.scss */
   .new-article strong {
     margin-left: 15px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 212, ../resources/scss/layout/_header.scss */
+  /* line 208, ../resources/scss/layout/_header.scss */
   .new-article strong {
     margin-left: 10px;
   }
 }
-/* line 226, ../resources/scss/layout/_header.scss */
+/* line 222, ../resources/scss/layout/_header.scss */
 .new-article div em {
   font-size: .85rem;
   font-style: normal;
 }
 @media screen and (max-width: 870px) and (min-width: 600px) {
-  /* line 226, ../resources/scss/layout/_header.scss */
+  /* line 222, ../resources/scss/layout/_header.scss */
   .new-article div em {
     font-size: .75rem;
   }
 }
 @media screen and (max-width: 1025px) and (min-width: 870px) {
-  /* line 226, ../resources/scss/layout/_header.scss */
+  /* line 222, ../resources/scss/layout/_header.scss */
   .new-article div em {
     font-size: .65rem;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 226, ../resources/scss/layout/_header.scss */
+  /* line 222, ../resources/scss/layout/_header.scss */
   .new-article div em {
     font-size: 0.8rem;
   }
 }
 
-/* line 242, ../resources/scss/layout/_header.scss */
+/* line 238, ../resources/scss/layout/_header.scss */
 .social-icons {
   width: 130px;
   height: 16px;
   float: right;
 }
 @media screen and (max-width: 1025px) {
-  /* line 242, ../resources/scss/layout/_header.scss */
+  /* line 238, ../resources/scss/layout/_header.scss */
   .social-icons {
     display: none;
   }
 }
-/* line 250, ../resources/scss/layout/_header.scss */
+/* line 245, ../resources/scss/layout/_header.scss */
 .social-icons ul li {
   display: inline-block;
   vertical-align: middle;
@@ -409,13 +408,13 @@ h2 {
   *display: inline;
   margin-left: 10px;
 }
-/* line 254, ../resources/scss/layout/_header.scss */
+/* line 249, ../resources/scss/layout/_header.scss */
 .social-icons ul li a img {
   width: 18px;
   height: 14px;
 }
 
-/* line 261, ../resources/scss/layout/_header.scss */
+/* line 256, ../resources/scss/layout/_header.scss */
 .header-links {
   width: 98%;
   height: 30px;
@@ -423,30 +422,30 @@ h2 {
   background-color: black;
 }
 @media screen and (max-width: 1025px) {
-  /* line 261, ../resources/scss/layout/_header.scss */
+  /* line 256, ../resources/scss/layout/_header.scss */
   .header-links {
     display: none;
   }
 }
-/* line 270, ../resources/scss/layout/_header.scss */
+/* line 265, ../resources/scss/layout/_header.scss */
 .header-links ul li {
   text-transform: uppercase;
   display: inline-block;
   margin-right: 18px;
   font-family: "Slabo 27px", serif;
 }
-/* line 277, ../resources/scss/layout/_header.scss */
+/* line 272, ../resources/scss/layout/_header.scss */
 .header-links ul li a {
   color: white;
 }
-/* line 280, ../resources/scss/layout/_header.scss */
+/* line 275, ../resources/scss/layout/_header.scss */
 .header-links ul li a img {
   width: 30px;
   height: 30px;
   margin-right: 5px;
   vertical-align: middle;
 }
-/* line 285, ../resources/scss/layout/_header.scss */
+/* line 280, ../resources/scss/layout/_header.scss */
 .header-links ul li a:hover {
   color: #fa4b2a;
 }
@@ -495,14 +494,15 @@ body {
 /* line 32, ../resources/scss/helpers/_base.scss */
 a {
   text-decoration: none;
+  color: black;
 }
 
-/* line 36, ../resources/scss/helpers/_base.scss */
+/* line 37, ../resources/scss/helpers/_base.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 40, ../resources/scss/helpers/_base.scss */
+/* line 41, ../resources/scss/helpers/_base.scss */
 h2 {
   color: white;
   font-family: Adelle, Georgia, serif;
@@ -544,21 +544,17 @@ h2 {
 }
 
 /* line 29, ../resources/scss/layout/_first-image-links.scss */
-.image-after, .avengers:after, .may-weather:after, .startup:after, .last-of-us:after, .weekender:after, .watch:after, .tesla:after {
-  opacity: .7;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 35, ../resources/scss/layout/_first-image-links.scss */
 .image-hover-after, .avengers:hover:after, .may-weather:hover:after, .startup:hover:after, .last-of-us:hover:after, .weekender:hover:after, .watch:hover:after, .tesla:hover:after {
   opacity: .9;
 }
 
+/* line 33, ../resources/scss/layout/_first-image-links.scss */
+.avengers {
+  height: 350px;
+  background-image: url("../resources/images/avengers-age-of-ultron-comic-con-14-poster-full-hd.0.0.jpg");
+}
 /* line 38, ../resources/scss/layout/_first-image-links.scss */
-.section1-image-text, .avengers h2, .may-weather h2, .startup h2, .last-of-us h2, .weekender h2, .watch h2, .tesla h2 {
+.avengers h2 {
   position: absolute;
   z-index: 2;
   text-align: center;
@@ -569,33 +565,32 @@ h2 {
 }
 @media screen and (min-width: 1025px) {
   /* line 38, ../resources/scss/layout/_first-image-links.scss */
-  .section1-image-text, .avengers h2, .may-weather h2, .startup h2, .last-of-us h2, .weekender h2, .watch h2, .tesla h2 {
+  .avengers h2 {
     font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 1025px) {
   /* line 38, ../resources/scss/layout/_first-image-links.scss */
-  .section1-image-text, .avengers h2, .may-weather h2, .startup h2, .last-of-us h2, .weekender h2, .watch h2, .tesla h2 {
+  .avengers h2 {
     white-space: pre-wrap;
   }
 }
-
-/* line 56, ../resources/scss/layout/_first-image-links.scss */
-.avengers {
-  height: 350px;
-  background-image: url("../resources/images/avengers-age-of-ultron-comic-con-14-poster-full-hd.0.0.jpg");
-}
-/* line 65, ../resources/scss/layout/_first-image-links.scss */
+/* line 42, ../resources/scss/layout/_first-image-links.scss */
 .avengers:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #292484, #dc4225);
   background-image: linear-gradient(135deg, #292484, #dc4225);
 }
-/* line 72, ../resources/scss/layout/_first-image-links.scss */
+/* line 49, ../resources/scss/layout/_first-image-links.scss */
 .avengers h2 {
   font-size: 2.5rem;
 }
 @media screen and (max-width: 700px) {
-  /* line 56, ../resources/scss/layout/_first-image-links.scss */
+  /* line 33, ../resources/scss/layout/_first-image-links.scss */
   .avengers {
     width: 100%;
     height: 180px;
@@ -603,30 +598,57 @@ h2 {
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 56, ../resources/scss/layout/_first-image-links.scss */
+  /* line 33, ../resources/scss/layout/_first-image-links.scss */
   .avengers {
     background-size: cover;
     width: 50%;
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 84, ../resources/scss/layout/_first-image-links.scss */
+  /* line 60, ../resources/scss/layout/_first-image-links.scss */
   .avengers h2 {
     font-size: 1.3rem;
   }
 }
 
-/* line 90, ../resources/scss/layout/_first-image-links.scss */
+/* line 66, ../resources/scss/layout/_first-image-links.scss */
 .may-weather {
   background-image: url("../resources/images/GettyImages-472022182.0.jpg");
 }
-/* line 98, ../resources/scss/layout/_first-image-links.scss */
+/* line 70, ../resources/scss/layout/_first-image-links.scss */
+.may-weather h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 70, ../resources/scss/layout/_first-image-links.scss */
+  .may-weather h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 70, ../resources/scss/layout/_first-image-links.scss */
+  .may-weather h2 {
+    white-space: pre-wrap;
+  }
+}
+/* line 74, ../resources/scss/layout/_first-image-links.scss */
 .may-weather:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #002f4b, #417711);
   background-image: linear-gradient(135deg, #002f4b, #417711);
 }
 @media screen and (max-width: 700px) {
-  /* line 90, ../resources/scss/layout/_first-image-links.scss */
+  /* line 66, ../resources/scss/layout/_first-image-links.scss */
   .may-weather {
     width: 100%;
     height: 180px;
@@ -634,30 +656,57 @@ h2 {
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 90, ../resources/scss/layout/_first-image-links.scss */
+  /* line 66, ../resources/scss/layout/_first-image-links.scss */
   .may-weather {
     background-size: cover;
     width: 50%;
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 114, ../resources/scss/layout/_first-image-links.scss */
+  /* line 89, ../resources/scss/layout/_first-image-links.scss */
   .may-weather h2 {
     font-size: 1.3rem;
   }
 }
 
-/* line 119, ../resources/scss/layout/_first-image-links.scss */
+/* line 94, ../resources/scss/layout/_first-image-links.scss */
 .startup {
   background-image: url("../resources/images/GettyImages-461180118.0.jpg");
 }
-/* line 127, ../resources/scss/layout/_first-image-links.scss */
+/* line 98, ../resources/scss/layout/_first-image-links.scss */
+.startup h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 98, ../resources/scss/layout/_first-image-links.scss */
+  .startup h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 98, ../resources/scss/layout/_first-image-links.scss */
+  .startup h2 {
+    white-space: pre-wrap;
+  }
+}
+/* line 102, ../resources/scss/layout/_first-image-links.scss */
 .startup:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #292484, #a83279);
   background-image: linear-gradient(135deg, #292484, #a83279);
 }
 @media screen and (max-width: 700px) {
-  /* line 119, ../resources/scss/layout/_first-image-links.scss */
+  /* line 94, ../resources/scss/layout/_first-image-links.scss */
   .startup {
     width: 100%;
     height: 180px;
@@ -665,30 +714,57 @@ h2 {
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 119, ../resources/scss/layout/_first-image-links.scss */
+  /* line 94, ../resources/scss/layout/_first-image-links.scss */
   .startup {
     background-size: cover;
     width: 50%;
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 143, ../resources/scss/layout/_first-image-links.scss */
+  /* line 117, ../resources/scss/layout/_first-image-links.scss */
   .startup h2 {
     font-size: 1.3rem;
   }
 }
 
-/* line 148, ../resources/scss/layout/_first-image-links.scss */
+/* line 122, ../resources/scss/layout/_first-image-links.scss */
 .last-of-us {
   background-image: url("../resources/images/The_Last_of_Us__Remastered_20150312202125_1.0.0.jpg");
 }
-/* line 156, ../resources/scss/layout/_first-image-links.scss */
+/* line 126, ../resources/scss/layout/_first-image-links.scss */
+.last-of-us h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 126, ../resources/scss/layout/_first-image-links.scss */
+  .last-of-us h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 126, ../resources/scss/layout/_first-image-links.scss */
+  .last-of-us h2 {
+    white-space: pre-wrap;
+  }
+}
+/* line 130, ../resources/scss/layout/_first-image-links.scss */
 .last-of-us:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #d38312, #002f4b);
   background-image: linear-gradient(135deg, #d38312, #002f4b);
 }
 @media screen and (max-width: 1025px) {
-  /* line 148, ../resources/scss/layout/_first-image-links.scss */
+  /* line 122, ../resources/scss/layout/_first-image-links.scss */
   .last-of-us {
     width: 500px;
     height: 180px;
@@ -697,45 +773,99 @@ h2 {
   }
 }
 
-/* line 169, ../resources/scss/layout/_first-image-links.scss */
+/* line 142, ../resources/scss/layout/_first-image-links.scss */
 .weekender {
   height: 350px;
   background-image: url("../resources/images/weekender-graphics_apple.0.jpg");
 }
-/* line 178, ../resources/scss/layout/_first-image-links.scss */
+/* line 147, ../resources/scss/layout/_first-image-links.scss */
+.weekender h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 147, ../resources/scss/layout/_first-image-links.scss */
+  .weekender h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 147, ../resources/scss/layout/_first-image-links.scss */
+  .weekender h2 {
+    white-space: pre-wrap;
+  }
+}
+/* line 151, ../resources/scss/layout/_first-image-links.scss */
 .weekender:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #e0be00, #dc4225);
   background-image: linear-gradient(135deg, #e0be00, #dc4225);
 }
-/* line 185, ../resources/scss/layout/_first-image-links.scss */
+/* line 158, ../resources/scss/layout/_first-image-links.scss */
 .weekender h2 {
   font-size: 2.5rem;
 }
 @media screen and (max-width: 1025px) {
-  /* line 169, ../resources/scss/layout/_first-image-links.scss */
+  /* line 142, ../resources/scss/layout/_first-image-links.scss */
   .weekender {
     width: 500px;
     height: 180px;
     background-size: cover;
   }
-  /* line 192, ../resources/scss/layout/_first-image-links.scss */
+  /* line 164, ../resources/scss/layout/_first-image-links.scss */
   .weekender h2 {
     font-size: 1.1rem;
   }
 }
 
-/* line 197, ../resources/scss/layout/_first-image-links.scss */
+/* line 169, ../resources/scss/layout/_first-image-links.scss */
 .watch {
   top: -175px;
   background-image: url("../resources/images/GettyImages-461496224.0.jpg");
 }
-/* line 206, ../resources/scss/layout/_first-image-links.scss */
+/* line 174, ../resources/scss/layout/_first-image-links.scss */
+.watch h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 174, ../resources/scss/layout/_first-image-links.scss */
+  .watch h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 174, ../resources/scss/layout/_first-image-links.scss */
+  .watch h2 {
+    white-space: pre-wrap;
+  }
+}
+/* line 178, ../resources/scss/layout/_first-image-links.scss */
 .watch:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #d38312, #a83279);
   background-image: linear-gradient(135deg, #d38312, #a83279);
 }
 @media screen and (max-width: 1025px) {
-  /* line 197, ../resources/scss/layout/_first-image-links.scss */
+  /* line 169, ../resources/scss/layout/_first-image-links.scss */
   .watch {
     width: 500px;
     height: 180px;
@@ -745,18 +875,45 @@ h2 {
   }
 }
 
-/* line 220, ../resources/scss/layout/_first-image-links.scss */
+/* line 191, ../resources/scss/layout/_first-image-links.scss */
 .tesla {
   top: -175px;
   background-image: url("../resources/images/DSC_8244-2040w.0.0.jpg");
 }
-/* line 229, ../resources/scss/layout/_first-image-links.scss */
+/* line 196, ../resources/scss/layout/_first-image-links.scss */
+.tesla h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 196, ../resources/scss/layout/_first-image-links.scss */
+  .tesla h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 196, ../resources/scss/layout/_first-image-links.scss */
+  .tesla h2 {
+    white-space: pre-wrap;
+  }
+}
+/* line 200, ../resources/scss/layout/_first-image-links.scss */
 .tesla:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #417711, #dc4225);
   background-image: linear-gradient(135deg, #417711, #dc4225);
 }
 @media screen and (max-width: 1025px) {
-  /* line 220, ../resources/scss/layout/_first-image-links.scss */
+  /* line 191, ../resources/scss/layout/_first-image-links.scss */
   .tesla {
     width: 500px;
     height: 180px;
@@ -766,43 +923,43 @@ h2 {
   }
 }
 
-/* line 244, ../resources/scss/layout/_first-image-links.scss */
+/* line 214, ../resources/scss/layout/_first-image-links.scss */
 .comment-higher {
   background-color: #ffd800;
   color: black;
 }
 @media screen and (max-width: 1025px) {
-  /* line 244, ../resources/scss/layout/_first-image-links.scss */
+  /* line 214, ../resources/scss/layout/_first-image-links.scss */
   .comment-higher {
     margin-top: -20px;
   }
 }
 
-/* line 253, ../resources/scss/layout/_first-image-links.scss */
+/* line 223, ../resources/scss/layout/_first-image-links.scss */
 .comment-lower {
   background-color: #95ae20;
   color: white;
 }
 @media screen and (max-width: 1025px) {
-  /* line 253, ../resources/scss/layout/_first-image-links.scss */
+  /* line 223, ../resources/scss/layout/_first-image-links.scss */
   .comment-lower {
     margin-top: -20px;
   }
 }
 
-/* line 263, ../resources/scss/layout/_first-image-links.scss */
+/* line 233, ../resources/scss/layout/_first-image-links.scss */
 .author {
   float: left;
 }
 
-/* line 266, ../resources/scss/layout/_first-image-links.scss */
+/* line 236, ../resources/scss/layout/_first-image-links.scss */
 .comment, .comment-higher, .comment-lower {
   float: right;
   font-size: 13px;
   padding: .4rem .2rem .2rem;
   line-height: .8;
 }
-/* line 272, ../resources/scss/layout/_first-image-links.scss */
+/* line 242, ../resources/scss/layout/_first-image-links.scss */
 .comment:before, .comment-higher:before, .comment-lower:before {
   border-top-color: black;
   border: 0 solid transparent;
@@ -814,14 +971,14 @@ h2 {
   right: 15px;
 }
 @media screen and (max-width: 1025px) {
-  /* line 272, ../resources/scss/layout/_first-image-links.scss */
+  /* line 242, ../resources/scss/layout/_first-image-links.scss */
   .comment:before, .comment-higher:before, .comment-lower:before {
     top: 36px;
   }
 }
 
 @media screen and (max-width: 1025px) {
-  /* line 288, ../resources/scss/layout/_first-image-links.scss */
+  /* line 258, ../resources/scss/layout/_first-image-links.scss */
   .image-scroll {
     overflow-x: scroll;
     display: inline-block;
@@ -832,7 +989,7 @@ h2 {
     max-width: 1370px;
     white-space: nowrap;
   }
-  /* line 300, ../resources/scss/layout/_first-image-links.scss */
+  /* line 269, ../resources/scss/layout/_first-image-links.scss */
   .image-scroll li {
     display: inline-block;
   }
@@ -882,14 +1039,15 @@ body {
 /* line 32, ../resources/scss/helpers/_base.scss */
 a {
   text-decoration: none;
+  color: black;
 }
 
-/* line 36, ../resources/scss/helpers/_base.scss */
+/* line 37, ../resources/scss/helpers/_base.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 40, ../resources/scss/helpers/_base.scss */
+/* line 41, ../resources/scss/helpers/_base.scss */
 h2 {
   color: white;
   font-family: Adelle, Georgia, serif;
@@ -907,22 +1065,28 @@ h2 {
     height: 380px;
   }
 }
+@media screen and (max-width: 600px) {
+  /* line 6, ../resources/scss/layout/_second-marvel-universe.scss */
+  .content-marvel-el {
+    height: 700px;
+  }
+}
 
-/* line 15, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 18, ../resources/scss/layout/_second-marvel-universe.scss */
 .color-white {
   color: white;
 }
-/* line 18, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 21, ../resources/scss/layout/_second-marvel-universe.scss */
 .color-white:hover {
   text-decoration: underline;
 }
 
-/* line 23, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 26, ../resources/scss/layout/_second-marvel-universe.scss */
 .color-logo, .color-white:hover {
   color: #fa4b2a;
 }
 
-/* line 27, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 30, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-logo-create, .marvel-cine-header ul .logo .logo4, .marvel-cine-header ul .logo .logo3, .marvel-cine-header ul .logo .logo2 {
   transform: skew(-10deg, -20deg);
   width: 13px;
@@ -930,26 +1094,26 @@ h2 {
   border-width: thick;
 }
 
-/* line 32, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 35, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header {
   width: 98.5%;
   height: 30px;
   background-color: black;
   padding: .55rem .5rem;
 }
-/* line 37, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 40, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul {
   width: 100%;
   height: 30px;
 }
-/* line 40, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 43, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .logo {
   width: 60rem;
   height: 2rem;
   text-transform: uppercase;
   color: white;
 }
-/* line 46, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 49, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .logo .logo4 {
   border: 2px solid blueviolet;
   border-bottom: none;
@@ -957,7 +1121,7 @@ h2 {
   border-width: thick;
 }
 @media screen and (min-width: 1025px) {
-  /* line 46, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 49, ../resources/scss/layout/_second-marvel-universe.scss */
   .marvel-cine-header ul .logo .logo4 {
     margin-top: 5px;
     margin-left: -660px;
@@ -965,14 +1129,14 @@ h2 {
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 46, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 49, ../resources/scss/layout/_second-marvel-universe.scss */
   .marvel-cine-header ul .logo .logo4 {
     margin-top: 5px;
     margin-left: 0px;
     display: inline-block;
   }
 }
-/* line 60, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 63, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .logo .logo3 {
   border: 2px solid red;
   border-bottom: none;
@@ -982,14 +1146,14 @@ h2 {
   margin-left: -15px;
   display: inline-block;
 }
-/* line 68, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 71, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .logo .logo2 {
   background-color: white;
   margin-top: 8px;
   margin-left: -15px;
   display: inline-block;
 }
-/* line 73, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 76, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .logo .video-icon {
   border-top: none;
   border-left: none;
@@ -1000,46 +1164,46 @@ h2 {
   vertical-align: bottom;
 }
 @media screen and (max-width: 1025px) {
-  /* line 73, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 76, ../resources/scss/layout/_second-marvel-universe.scss */
   .marvel-cine-header ul .logo .video-icon {
     margin-left: 0px;
     margin-top: 5px;
   }
 }
-/* line 90, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 93, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .title-watch {
   color: #fa4b2a;
   font-size: 25px;
   margin-left: 10px;
 }
-/* line 95, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 98, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .title-watch:hover {
   text-decoration: underline;
 }
-/* line 99, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 102, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .title-seemore {
   float: right;
   margin-top: 12px;
 }
 @media screen and (min-width: 700px) {
-  /* line 99, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 102, ../resources/scss/layout/_second-marvel-universe.scss */
   .marvel-cine-header ul .title-seemore {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 99, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 102, ../resources/scss/layout/_second-marvel-universe.scss */
   .marvel-cine-header ul .title-seemore {
     display: none;
   }
 }
-/* line 110, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 113, ../resources/scss/layout/_second-marvel-universe.scss */
 .marvel-cine-header ul .title-seemore:hover {
   text-decoration: underline;
 }
 
-/* line 117, ../resources/scss/layout/_second-marvel-universe.scss */
-.image-marvel-after, .history-video:after, .history-video:before, .hololens:after, .lg-g4:after, .dell:after, .sparten:after, .surface3:after {
+/* line 120, ../resources/scss/layout/_second-marvel-universe.scss */
+.image-marvel-after, .hololens:after, .lg-g4:after, .dell:after, .sparten:after, .surface3:after {
   opacity: .7;
   content: '';
   position: absolute;
@@ -1047,7 +1211,7 @@ h2 {
   height: 100%;
 }
 
-/* line 123, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 126, ../resources/scss/layout/_second-marvel-universe.scss */
 .title {
   width: 70%;
   height: 30px;
@@ -1056,7 +1220,7 @@ h2 {
   margin-left: 10px;
 }
 
-/* line 129, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 132, ../resources/scss/layout/_second-marvel-universe.scss */
 .side-video-style, .side-video1, .side-video2, .side-video3, .side-video4, .side-video5 {
   width: 100%;
   height: 85px;
@@ -1064,12 +1228,12 @@ h2 {
   border-top: none;
   background-color: #222;
 }
-/* line 135, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 138, ../resources/scss/layout/_second-marvel-universe.scss */
 .side-video-style:hover, .side-video1:hover, .side-video2:hover, .side-video3:hover, .side-video4:hover, .side-video5:hover {
   background-color: #303030;
 }
 
-/* line 139, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 142, ../resources/scss/layout/_second-marvel-universe.scss */
 .side-video-text, .text {
   background-color: #222;
   width: 61%;
@@ -1079,36 +1243,36 @@ h2 {
   padding: 0 5px 0 5px;
 }
 
-/* line 150, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 153, ../resources/scss/layout/_second-marvel-universe.scss */
 .text h4 {
   font-weight: normal;
   font-size: 0.75rem;
 }
 @media screen and (max-width: 700px) {
-  /* line 150, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 153, ../resources/scss/layout/_second-marvel-universe.scss */
   .text h4 {
     font-size: 0.95rem;
   }
 }
-/* line 159, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 162, ../resources/scss/layout/_second-marvel-universe.scss */
 .text:hover {
   color: #fa4b2a;
   background-color: #303030;
 }
 @media screen and (max-width: 700px) {
-  /* line 147, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 150, ../resources/scss/layout/_second-marvel-universe.scss */
   .text {
     width: 81%;
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 147, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 150, ../resources/scss/layout/_second-marvel-universe.scss */
   .text {
     padding: 0 0 0 5px;
   }
 }
 
-/* line 173, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 176, ../resources/scss/layout/_second-marvel-universe.scss */
 .history-video {
   width: 100%;
   height: 450px;
@@ -1120,18 +1284,18 @@ h2 {
   z-index: 10;
 }
 @media screen and (min-width: 1025px) {
-  /* line 173, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 176, ../resources/scss/layout/_second-marvel-universe.scss */
   .history-video {
     top: -125px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 173, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 176, ../resources/scss/layout/_second-marvel-universe.scss */
   .history-video {
     height: 304px;
   }
 }
-/* line 188, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 191, ../resources/scss/layout/_second-marvel-universe.scss */
 .history-video h3 {
   z-index: 14;
   color: white;
@@ -1144,27 +1308,37 @@ h2 {
   font-weight: normal;
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 188, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 191, ../resources/scss/layout/_second-marvel-universe.scss */
   .history-video h3 {
     bottom: 10px;
     font-size: 22px;
   }
 }
-/* line 205, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 208, ../resources/scss/layout/_second-marvel-universe.scss */
 .history-video:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(135deg, #dc4225, #002f4b);
   background-image: linear-gradient(135deg, #dc4225, #002f4b);
   z-index: 11;
 }
-/* line 211, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 214, ../resources/scss/layout/_second-marvel-universe.scss */
 .history-video:hover:after {
   background-image: -webkit-linear-gradient(135deg, #292484, #dc4225);
   background-image: linear-gradient(135deg, #292484, #dc4225);
   opacity: .9;
 }
-/* line 216, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 219, ../resources/scss/layout/_second-marvel-universe.scss */
 .history-video:before {
   text-align: center;
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   width: 80px;
   height: 80px;
   border-radius: 80px;
@@ -1176,18 +1350,18 @@ h2 {
   border: 6px solid white;
 }
 
-/* line 232, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 235, ../resources/scss/layout/_second-marvel-universe.scss */
 .videos {
   width: 100%;
   height: 478px;
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 232, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 235, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos {
     height: 380px;
   }
 }
-/* line 239, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 242, ../resources/scss/layout/_second-marvel-universe.scss */
 .videos .marvel-videos {
   width: 70%;
   height: 478px;
@@ -1195,18 +1369,18 @@ h2 {
   float: left;
 }
 @media screen and (max-width: 700px) {
-  /* line 239, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 242, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos .marvel-videos {
     width: 100%;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 239, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 242, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos .marvel-videos {
     height: 332px;
   }
 }
-/* line 251, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 254, ../resources/scss/layout/_second-marvel-universe.scss */
 .videos .marvel-videos .video-footer {
   background-color: #222;
   width: 100%;
@@ -1216,31 +1390,31 @@ h2 {
   text-transform: uppercase;
 }
 @media screen and (max-width: 700px) {
-  /* line 251, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 254, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos .marvel-videos .video-footer {
     display: none;
   }
 }
 @media screen and (max-width: 1025px) and (min-width: 700px) {
-  /* line 251, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 254, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos .marvel-videos .video-footer {
     top: 304px;
   }
 }
-/* line 265, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 268, ../resources/scss/layout/_second-marvel-universe.scss */
 .videos .marvel-videos .video-footer h5 {
   margin: 6px 0 0 20px;
 }
-/* line 267, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 270, ../resources/scss/layout/_second-marvel-universe.scss */
 .videos .marvel-videos .video-footer h5 a {
   color: #666;
 }
-/* line 270, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 273, ../resources/scss/layout/_second-marvel-universe.scss */
 .videos .marvel-videos .video-footer h5 a:hover {
   color: #fa4b2a;
   text-decoration: underline;
 }
-/* line 277, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 280, ../resources/scss/layout/_second-marvel-universe.scss */
 .videos .side-videos {
   width: 30%;
   height: 479px;
@@ -1249,7 +1423,7 @@ h2 {
   background-color: #222;
 }
 @media screen and (max-width: 700px) {
-  /* line 277, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 280, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos .side-videos {
     width: 100%;
     margin-top: -28px;
@@ -1257,7 +1431,7 @@ h2 {
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1025px) {
-  /* line 277, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 280, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos .side-videos {
     margin-top: 0px;
     height: 332px;
@@ -1265,21 +1439,21 @@ h2 {
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 277, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 280, ../resources/scss/layout/_second-marvel-universe.scss */
   .videos .side-videos {
     height: 478px;
   }
 }
 
 @media screen and (min-width: 700px) {
-  /* line 299, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 302, ../resources/scss/layout/_second-marvel-universe.scss */
   .side-video1, .side-video2, .side-video3, .side-video4, .side-video5 {
     height: 94px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  /* line 306, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 309, ../resources/scss/layout/_second-marvel-universe.scss */
   .side-video6 {
     width: 100%;
     height: 30px;
@@ -1288,25 +1462,25 @@ h2 {
     text-transform: uppercase;
     text-align: center;
   }
-  /* line 314, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 317, ../resources/scss/layout/_second-marvel-universe.scss */
   .side-video6:hover {
     background-color: red;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 306, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 309, ../resources/scss/layout/_second-marvel-universe.scss */
   .side-video6 {
     display: none;
   }
 }
 
 @media screen and (max-width: 700px) {
-  /* line 325, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 328, ../resources/scss/layout/_second-marvel-universe.scss */
   .side-video3, .side-video4, .side-video5 {
     display: none;
   }
 }
-/* line 330, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 333, ../resources/scss/layout/_second-marvel-universe.scss */
 .play, .video-link:after, .hololens-video-link:after, .lg-video-link:after, .dell-video-link:after, .sparten-video-link:after, .surface3-video-link:after {
   opacity: .7;
   content: '';
@@ -1315,11 +1489,11 @@ h2 {
   border-left-color: white;
 }
 
-/* line 338, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 341, ../resources/scss/layout/_second-marvel-universe.scss */
 .video-link, .hololens-video-link, .lg-video-link, .dell-video-link, .sparten-video-link, .surface3-video-link {
   position: relative;
 }
-/* line 341, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 344, ../resources/scss/layout/_second-marvel-universe.scss */
 .video-link:after, .hololens-video-link:after, .lg-video-link:after, .dell-video-link:after, .sparten-video-link:after, .surface3-video-link:after {
   border-width: 20px 0 20px 26.66667px;
   display: block;
@@ -1329,13 +1503,13 @@ h2 {
   left: 355px;
 }
 @media screen and (max-width: 1025px) {
-  /* line 341, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 344, ../resources/scss/layout/_second-marvel-universe.scss */
   .video-link:after, .hololens-video-link:after, .lg-video-link:after, .dell-video-link:after, .sparten-video-link:after, .surface3-video-link:after {
     top: 190px;
   }
 }
 @media screen and (min-width: 1025px) {
-  /* line 341, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 344, ../resources/scss/layout/_second-marvel-universe.scss */
   .video-link:after, .hololens-video-link:after, .lg-video-link:after, .dell-video-link:after, .sparten-video-link:after, .surface3-video-link:after {
     top: 60px;
   }
@@ -1451,8 +1625,13 @@ h2 {
   }
 }
 
-/* line 373, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 376, ../resources/scss/layout/_second-marvel-universe.scss */
 .history-video:before {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   width: 80px;
   height: 80px;
   border-radius: 80px;
@@ -1465,7 +1644,7 @@ h2 {
   position: absolute;
 }
 
-/* line 386, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 389, ../resources/scss/layout/_second-marvel-universe.scss */
 .hololens {
   width: 35.7%;
   height: 100%;
@@ -1477,7 +1656,7 @@ h2 {
   left: 0px;
 }
 @media screen and (max-width: 700px) {
-  /* line 386, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 389, ../resources/scss/layout/_second-marvel-universe.scss */
   .hololens {
     width: 17%;
     background-size: 115px 95px;
@@ -1527,7 +1706,7 @@ h2 {
   }
 }
 
-/* line 390, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 393, ../resources/scss/layout/_second-marvel-universe.scss */
 .lg-g4 {
   width: 35.7%;
   height: 100%;
@@ -1539,7 +1718,7 @@ h2 {
   left: 0px;
 }
 @media screen and (max-width: 700px) {
-  /* line 390, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 393, ../resources/scss/layout/_second-marvel-universe.scss */
   .lg-g4 {
     width: 17%;
     background-size: 115px 95px;
@@ -1589,7 +1768,7 @@ h2 {
   }
 }
 
-/* line 394, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 397, ../resources/scss/layout/_second-marvel-universe.scss */
 .dell {
   width: 35.7%;
   height: 100%;
@@ -1601,7 +1780,7 @@ h2 {
   left: 0px;
 }
 @media screen and (max-width: 700px) {
-  /* line 394, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 397, ../resources/scss/layout/_second-marvel-universe.scss */
   .dell {
     width: 17%;
     background-size: 115px 95px;
@@ -1651,7 +1830,7 @@ h2 {
   }
 }
 
-/* line 398, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 401, ../resources/scss/layout/_second-marvel-universe.scss */
 .sparten {
   width: 35.7%;
   height: 100%;
@@ -1663,7 +1842,7 @@ h2 {
   left: 0px;
 }
 @media screen and (max-width: 700px) {
-  /* line 398, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 401, ../resources/scss/layout/_second-marvel-universe.scss */
   .sparten {
     width: 17%;
     background-size: 115px 95px;
@@ -1713,7 +1892,7 @@ h2 {
   }
 }
 
-/* line 402, ../resources/scss/layout/_second-marvel-universe.scss */
+/* line 405, ../resources/scss/layout/_second-marvel-universe.scss */
 .surface3 {
   width: 35.7%;
   height: 100%;
@@ -1725,7 +1904,7 @@ h2 {
   left: 0px;
 }
 @media screen and (max-width: 700px) {
-  /* line 402, ../resources/scss/layout/_second-marvel-universe.scss */
+  /* line 405, ../resources/scss/layout/_second-marvel-universe.scss */
   .surface3 {
     width: 17%;
     background-size: 115px 95px;
@@ -1819,14 +1998,15 @@ body {
 /* line 32, ../resources/scss/helpers/_base.scss */
 a {
   text-decoration: none;
+  color: black;
 }
 
-/* line 36, ../resources/scss/helpers/_base.scss */
+/* line 37, ../resources/scss/helpers/_base.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 40, ../resources/scss/helpers/_base.scss */
+/* line 41, ../resources/scss/helpers/_base.scss */
 h2 {
   color: white;
   font-family: Adelle, Georgia, serif;
@@ -1838,7 +2018,7 @@ h2 {
   border: 1px solid #ddd;
   position: relative;
   width: 100%;
-  height: 825px;
+  height: 1025px;
 }
 /* line 12, ../resources/scss/layout/_third-article1.scss */
 .first-article ul {
@@ -1854,219 +2034,2126 @@ h2 {
 .first-article ul li {
   display: block;
 }
-
-/* line 22, ../resources/scss/layout/_third-article1.scss */
-.nintendo {
-  width: 33.2%;
-  height: 50%;
-  border: 1px solid #ddd;
-  border-top: none;
-  border-left: none;
-  border-bottom: none;
-  position: relative;
-  top: -125px;
-  float: left;
+@media screen and (max-width: 700px) {
+  /* line 6, ../resources/scss/layout/_third-article1.scss */
+  .first-article {
+    top: 175px;
+    height: 1125px;
+  }
 }
+@media screen and (max-width: 600px) {
+  /* line 6, ../resources/scss/layout/_third-article1.scss */
+  .first-article {
+    display: none;
+  }
+}
+
 /* line 29, ../resources/scss/layout/_third-article1.scss */
-.nintendo:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
+.first-article-short {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  color: #222;
+}
+@media screen and (max-width: 600px) {
+  /* line 29, ../resources/scss/layout/_third-article1.scss */
+  .first-article-short {
+    height: 525px;
+  }
+}
+/* line 39, ../resources/scss/layout/_third-article1.scss */
+.first-article-short ul {
   display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
+}
+/* line 42, ../resources/scss/layout/_third-article1.scss */
+.first-article-short ul li {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+}
+@media screen and (min-width: 600px) {
+  /* line 29, ../resources/scss/layout/_third-article1.scss */
+  .first-article-short {
+    display: none;
+  }
 }
 
-/* line 33, ../resources/scss/layout/_third-article1.scss */
-.destiny {
-  width: 33.2%;
-  height: 40%;
-  border: 1px solid #ddd;
-  border-top: none;
-  border-left: none;
-  border-bottom: none;
-  position: relative;
-  top: -125px;
+/* line 53, ../resources/scss/layout/_third-article1.scss */
+.short-image {
   float: left;
-}
-/* line 40, ../resources/scss/layout/_third-article1.scss */
-.destiny:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
-}
-/* line 43, ../resources/scss/layout/_third-article1.scss */
-.destiny:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
-  float: right;
-  border-width: 1px 0 0 1px;
-  left: 0px;
-}
-
-/* line 50, ../resources/scss/layout/_third-article1.scss */
-.info-archive {
-  width: 33.2%;
-  height: 30%;
-  border: 1px solid #ddd;
-  border: none;
-  position: relative;
-  top: -125px;
-  float: left;
-}
-/* line 55, ../resources/scss/layout/_third-article1.scss */
-.info-archive:after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
+  width: 20%;
+  height: 100%;
+  background-color: grey;
 }
 /* line 58, ../resources/scss/layout/_third-article1.scss */
-.info-archive:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
-  border-width: 1px 0 0 1px;
-  left: 0px;
+.short-image .short-image-fill {
+  width: 100%;
+  height: 100%;
 }
 
-/* line 65, ../resources/scss/layout/_third-article1.scss */
-.google-plan {
-  width: 33.2%;
-  height: 50%;
-  border: 1px solid #ddd;
-  border-left: none;
-  border-bottom: none;
-  position: relative;
-  top: 50%;
-  float: left;
-  float: none;
+/* line 62, ../resources/scss/layout/_third-article1.scss */
+.short-data {
+  font-size: 20px;
+  margin-left: 21%;
+}
+/* line 66, ../resources/scss/layout/_third-article1.scss */
+.short-data .short-author {
+  font-size: 13px;
+  padding-right: 8px;
+  border-right: 1px solid #222;
+  font-weight: bold;
 }
 /* line 72, ../resources/scss/layout/_third-article1.scss */
-.google-plan:after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
+.short-data .short-time {
+  font-style: normal;
+  font-size: 15px;
 }
 
-/* line 76, ../resources/scss/layout/_third-article1.scss */
-.tldr {
-  width: 33.2%;
-  height: 60%;
+/* line 78, ../resources/scss/layout/_third-article1.scss */
+.hospital-staff, .apple-watch {
+  width: 29%;
+  height: 47%;
   border: 1px solid #ddd;
-  border-left: none;
-  border-bottom: none;
-  position: relative;
-  top: -10%;
-  float: left;
-  right: 33%;
-}
-/* line 83, ../resources/scss/layout/_third-article1.scss */
-.tldr:after {
-  content: "";
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
   position: absolute;
-  top: 0%;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
+  left: 0px;
+  top: 0px;
 }
-/* line 86, ../resources/scss/layout/_third-article1.scss */
-.tldr:before {
+@media screen and (min-width: 1025px) {
+  /* line 82, ../resources/scss/layout/_third-article1.scss */
+  .hospital-staff:after, .apple-watch:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 78, ../resources/scss/layout/_third-article1.scss */
+  .hospital-staff, .apple-watch {
+    width: 45.5%;
+    height: 40%;
+  }
+}
+
+/* line 91, ../resources/scss/layout/_third-article1.scss */
+.nintendo-gain, .online-gaming {
+  width: 29%;
+  height: 37%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 33%;
+  top: 0px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 95, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-gain:after, .online-gaming:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    left: 653px;
+  }
+  /* line 99, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-gain:before, .online-gaming:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    float: right;
+    border-width: 1px 0 0 1px;
+    left: 315px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 91, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-gain, .online-gaming {
+    width: 45.5%;
+    height: 40%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* line 113, ../resources/scss/layout/_third-article1.scss */
+  .fb-img, .verge-playlist {
+    width: 30%;
+    width: 29%;
+    height: 27%;
+    border: 1px solid #ddd;
+    padding: 1.3rem;
+    border: none;
+    border-right: 1px solid #ddd;
+    position: absolute;
+    left: 66%;
+    top: 0px;
+    border-right: none;
+  }
+  /* line 119, ../resources/scss/layout/_third-article1.scss */
+  .fb-img:before, .verge-playlist:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    border-width: 1px 0 0 1px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 113, ../resources/scss/layout/_third-article1.scss */
+  .fb-img, .verge-playlist {
+    display: none;
+  }
+}
+
+/* line 128, ../resources/scss/layout/_third-article1.scss */
+.instagram-plan, .google-play {
+  width: 29%;
+  height: 46%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  border-top: 1px solid #ddd;
+}
+@media screen and (max-width: 1025px) {
+  /* line 128, ../resources/scss/layout/_third-article1.scss */
+  .instagram-plan, .google-play {
+    width: 45.5%;
+    height: 40%;
+    top: 44%;
+  }
+}
+
+/* line 138, ../resources/scss/layout/_third-article1.scss */
+.tldr-mult, .trending-discussion {
+  width: 29%;
+  height: 55%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 33%;
+  top: 41%;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  /* line 144, ../resources/scss/layout/_third-article1.scss */
+  .tldr-mult:after, .trending-discussion:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    width: 0;
+    left: 100.2%;
+  }
+}
+/* line 150, ../resources/scss/layout/_third-article1.scss */
+.tldr-mult:before, .trending-discussion:before {
   content: "";
   position: absolute;
   top: 0px;
-  left: 332px;
-  border: 1px solid #919191;
+  left: 97.5%;
+  border: 1px solid #666;
   border-width: 1px 1px 0 0;
   display: block;
   width: 8px;
   height: 8px;
   z-index: 10;
   border-width: 1px 0 0 1px;
-  left: -3px;
+  left: 0;
+  width: 0;
+}
+@media screen and (max-width: 1025px) {
+  /* line 138, ../resources/scss/layout/_third-article1.scss */
+  .tldr-mult, .trending-discussion {
+    display: none;
+  }
 }
 
-/* line 92, ../resources/scss/layout/_third-article1.scss */
-.tesla-plan {
-  width: 33.2%;
-  height: 70%;
-  border: 1px solid #ddd;
-  border-left: none;
-  border-bottom: none;
-  position: relative;
-  top: -20%;
+/* line 159, ../resources/scss/layout/_third-article1.scss */
+.uber-google {
   float: left;
-  float: none;
-  left: 66.8%;
-}
-/* line 100, ../resources/scss/layout/_third-article1.scss */
-.tesla-plan:after {
-  content: "";
+  width: 29%;
+  height: 67%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
   position: absolute;
-  top: 0%;
-  left: 332px;
-  border: 1px solid #919191;
-  border-width: 1px 1px 0 0;
-  display: block;
-  width: 8px;
-  height: 8px;
-  z-index: 10;
+  left: 66%;
+  top: 30%;
+  width: 30%;
+  border-top: 1px solid #ddd;
+  border-right: none;
 }
-/* line 103, ../resources/scss/layout/_third-article1.scss */
-.tesla-plan:before {
+@media screen and (max-width: 1025px) {
+  /* line 159, ../resources/scss/layout/_third-article1.scss */
+  .uber-google {
+    width: 45.5%;
+    height: 40%;
+    left: 50%;
+    top: 44%;
+  }
+}
+
+/* line 173, ../resources/scss/layout/_third-article1.scss */
+.article-headertext-common, .article-authordate-common .article-author {
+  font-size: 27px;
+  color: black;
+}
+/* line 177, ../resources/scss/layout/_third-article1.scss */
+.article-headertext-common:hover, .article-authordate-common .article-author:hover {
+  color: #fa4b2a;
+  text-decoration: underline;
+}
+
+/* line 182, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common {
+  width: 100%;
+  height: auto;
+  padding: 5px 5px 5px 0;
+}
+/* line 186, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common .article-author {
+  font-size: 11px;
+  padding-right: 5px;
+  border-right: 1px solid black;
+}
+/* line 192, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common .article-date {
+  font-size: 11px;
+  color: #666;
+  font-style: normal;
+}
+/* line 198, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common a .article-comment {
+  float: right;
+  font-size: 13px;
+  padding: .1rem .1rem .1rem;
+  sline-height: .8;
+  background-color: #666;
+  position: relative;
+  color: white;
+}
+/* line 207, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common a .article-comment:before {
+  border: 0 solid transparent;
+  border-top-color: black;
+  border-width: 5px 7px 0px 0px;
+  position: absolute;
+  content: '';
+  top: 19px;
+  left: 8px;
+}
+
+/* line 220, ../resources/scss/layout/_third-article1.scss */
+.link, .article-content .bignews {
+  color: #fa4b2a;
+}
+/* line 223, ../resources/scss/layout/_third-article1.scss */
+.link:hover, .article-content .bignews:hover {
+  text-decoration: underline;
+}
+
+/* line 228, ../resources/scss/layout/_third-article1.scss */
+.article-content {
+  margin-top: 10px;
+}
+/* line 231, ../resources/scss/layout/_third-article1.scss */
+.article-content a .article-image {
+  width: 100%;
+  height: 150px;
+}
+/* line 235, ../resources/scss/layout/_third-article1.scss */
+.article-content .bignews {
+  font-style: italic;
+  font-size: 30px;
+}
+@media screen and (max-width: 1025px) {
+  /* line 235, ../resources/scss/layout/_third-article1.scss */
+  .article-content .bignews {
+    font-size: 20px;
+  }
+}
+
+/* line 246, ../resources/scss/layout/_third-article1.scss */
+.article-text, .nintendo-article-text {
+  padding: 10px 0 10px 0;
+  position: relative;
+  top: 0;
+}
+@media screen and (max-width: 1025px) {
+  /* line 246, ../resources/scss/layout/_third-article1.scss */
+  .article-text, .nintendo-article-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* line 259, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-article-text:before {
+    position: absolute;
+    content: '';
+    border: 1px solid #919191;
+    border-width: 0px 0px 1px 1px;
+    bottom: -32px;
+    z-index: 25;
+    left: 317px;
+    height: 8px;
+    top: 100px;
+  }
+  /* line 263, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-article-text:after {
+    position: absolute;
+    content: '';
+    border: 1px solid #919191;
+    border-width: 0px 0px 1px 1px;
+    bottom: -32px;
+    z-index: 25;
+    left: 657px;
+    height: 8px;
+    top: 100px;
+  }
+}
+
+/* line 270, ../resources/scss/layout/_third-article1.scss */
+.tldr-data {
+  padding: 10px;
+}
+/* line 272, ../resources/scss/layout/_third-article1.scss */
+.tldr-data .tldr-date-content {
+  color: #666;
+  font-size: 13px;
+}
+/* line 276, ../resources/scss/layout/_third-article1.scss */
+.tldr-data .tdlr-content {
+  font-size: 20px;
+}
+/* line 278, ../resources/scss/layout/_third-article1.scss */
+.tldr-data .tdlr-content:hover {
+  color: #fa4b2a;
+  text-decoration: none;
+}
+
+/* line 3, ../resources/scss/helpers/_base.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../resources/scss/helpers/_base.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 12, ../resources/scss/helpers/_base.scss */
+body {
+  background-color: white;
+  font-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Slabo 27px", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+@media screen and (min-width: 600px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 15px;
+  }
+}
+
+/* line 32, ../resources/scss/helpers/_base.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 37, ../resources/scss/helpers/_base.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 41, ../resources/scss/helpers/_base.scss */
+h2 {
+  color: white;
+  font-family: Adelle, Georgia, serif;
+}
+
+/* line 6, ../resources/scss/layout/_fourth-data-breaker.scss */
+.data-breaker {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ddd;
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  /* line 6, ../resources/scss/layout/_fourth-data-breaker.scss */
+  .data-breaker {
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1025px) {
+  /* line 6, ../resources/scss/layout/_fourth-data-breaker.scss */
+  .data-breaker {
+    margin-top: -125px;
+  }
+}
+/* line 25, ../resources/scss/layout/_fourth-data-breaker.scss */
+.data-breaker a .image-cannes {
+  background: url("../resources/images/cannes.jpg") no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+/* line 143, ../resources/scss/helpers/_mixins.scss */
+.data-breaker a .image-cannes h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-cannes h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-cannes h2 {
+    white-space: pre-wrap;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-cannes h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-cannes h2 {
+    font-size: 2.5rem;
+  }
+}
+/* line 153, ../resources/scss/helpers/_mixins.scss */
+.data-breaker a .image-cannes .data-breaker-author {
+  position: absolute;
+  top: 180px;
+  padding-left: 40px;
+  color: white;
+  z-index: 1;
+}
+/* line 28, ../resources/scss/layout/_fourth-data-breaker.scss */
+.data-breaker a .image-cannes:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #d38312, #002f4b);
+  background-image: linear-gradient(135deg, #d38312, #002f4b);
+}
+/* line 35, ../resources/scss/layout/_fourth-data-breaker.scss */
+.data-breaker a .image-ipad {
+  background: url("../resources/images/best-stylus-buy-timn-5310.0.0.jpg") no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+/* line 143, ../resources/scss/helpers/_mixins.scss */
+.data-breaker a .image-ipad h2 {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  top: 15px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 12px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-ipad h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-ipad h2 {
+    white-space: pre-wrap;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-ipad h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  /* line 143, ../resources/scss/helpers/_mixins.scss */
+  .data-breaker a .image-ipad h2 {
+    font-size: 2.5rem;
+  }
+}
+/* line 153, ../resources/scss/helpers/_mixins.scss */
+.data-breaker a .image-ipad .data-breaker-author {
+  position: absolute;
+  top: 180px;
+  padding-left: 40px;
+  color: white;
+  z-index: 1;
+}
+/* line 38, ../resources/scss/layout/_fourth-data-breaker.scss */
+.data-breaker a .image-ipad:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #dc4225, #292484);
+  background-image: linear-gradient(135deg, #dc4225, #292484);
+}
+
+/* line 3, ../resources/scss/helpers/_base.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../resources/scss/helpers/_base.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 12, ../resources/scss/helpers/_base.scss */
+body {
+  background-color: white;
+  font-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Slabo 27px", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+@media screen and (min-width: 600px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 15px;
+  }
+}
+
+/* line 32, ../resources/scss/helpers/_base.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 37, ../resources/scss/helpers/_base.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 41, ../resources/scss/helpers/_base.scss */
+h2 {
+  color: white;
+  font-family: Adelle, Georgia, serif;
+}
+
+/* line 3, ../resources/scss/helpers/_base.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../resources/scss/helpers/_base.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 12, ../resources/scss/helpers/_base.scss */
+body {
+  background-color: white;
+  font-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Slabo 27px", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+@media screen and (min-width: 600px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 15px;
+  }
+}
+
+/* line 32, ../resources/scss/helpers/_base.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 37, ../resources/scss/helpers/_base.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 41, ../resources/scss/helpers/_base.scss */
+h2 {
+  color: white;
+  font-family: Adelle, Georgia, serif;
+}
+
+/* line 6, ../resources/scss/layout/_third-article1.scss */
+.first-article {
+  background-color: white;
+  border: 1px solid #ddd;
+  position: relative;
+  width: 100%;
+  height: 1025px;
+}
+/* line 12, ../resources/scss/layout/_third-article1.scss */
+.first-article ul {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 16, ../resources/scss/layout/_third-article1.scss */
+.first-article ul li {
+  display: block;
+}
+@media screen and (max-width: 700px) {
+  /* line 6, ../resources/scss/layout/_third-article1.scss */
+  .first-article {
+    top: 175px;
+    height: 1125px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 6, ../resources/scss/layout/_third-article1.scss */
+  .first-article {
+    display: none;
+  }
+}
+
+/* line 29, ../resources/scss/layout/_third-article1.scss */
+.first-article-short {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  color: #222;
+}
+@media screen and (max-width: 600px) {
+  /* line 29, ../resources/scss/layout/_third-article1.scss */
+  .first-article-short {
+    height: 525px;
+  }
+}
+/* line 39, ../resources/scss/layout/_third-article1.scss */
+.first-article-short ul {
+  display: block;
+}
+/* line 42, ../resources/scss/layout/_third-article1.scss */
+.first-article-short ul li {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+}
+@media screen and (min-width: 600px) {
+  /* line 29, ../resources/scss/layout/_third-article1.scss */
+  .first-article-short {
+    display: none;
+  }
+}
+
+/* line 53, ../resources/scss/layout/_third-article1.scss */
+.short-image {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: grey;
+}
+/* line 58, ../resources/scss/layout/_third-article1.scss */
+.short-image .short-image-fill {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 62, ../resources/scss/layout/_third-article1.scss */
+.short-data {
+  font-size: 20px;
+  margin-left: 21%;
+}
+/* line 66, ../resources/scss/layout/_third-article1.scss */
+.short-data .short-author {
+  font-size: 13px;
+  padding-right: 8px;
+  border-right: 1px solid #222;
+  font-weight: bold;
+}
+/* line 72, ../resources/scss/layout/_third-article1.scss */
+.short-data .short-time {
+  font-style: normal;
+  font-size: 15px;
+}
+
+/* line 78, ../resources/scss/layout/_third-article1.scss */
+.hospital-staff, .apple-watch {
+  width: 29%;
+  height: 47%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 82, ../resources/scss/layout/_third-article1.scss */
+  .hospital-staff:after, .apple-watch:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 78, ../resources/scss/layout/_third-article1.scss */
+  .hospital-staff, .apple-watch {
+    width: 45.5%;
+    height: 40%;
+  }
+}
+
+/* line 91, ../resources/scss/layout/_third-article1.scss */
+.nintendo-gain, .online-gaming {
+  width: 29%;
+  height: 37%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 33%;
+  top: 0px;
+}
+@media screen and (min-width: 1025px) {
+  /* line 95, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-gain:after, .online-gaming:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    left: 653px;
+  }
+  /* line 99, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-gain:before, .online-gaming:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    float: right;
+    border-width: 1px 0 0 1px;
+    left: 315px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 91, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-gain, .online-gaming {
+    width: 45.5%;
+    height: 40%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* line 113, ../resources/scss/layout/_third-article1.scss */
+  .fb-img, .verge-playlist {
+    width: 30%;
+    width: 29%;
+    height: 27%;
+    border: 1px solid #ddd;
+    padding: 1.3rem;
+    border: none;
+    border-right: 1px solid #ddd;
+    position: absolute;
+    left: 66%;
+    top: 0px;
+    border-right: none;
+  }
+  /* line 119, ../resources/scss/layout/_third-article1.scss */
+  .fb-img:before, .verge-playlist:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    border-width: 1px 0 0 1px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 113, ../resources/scss/layout/_third-article1.scss */
+  .fb-img, .verge-playlist {
+    display: none;
+  }
+}
+
+/* line 128, ../resources/scss/layout/_third-article1.scss */
+.instagram-plan, .google-play {
+  width: 29%;
+  height: 46%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  border-top: 1px solid #ddd;
+}
+@media screen and (max-width: 1025px) {
+  /* line 128, ../resources/scss/layout/_third-article1.scss */
+  .instagram-plan, .google-play {
+    width: 45.5%;
+    height: 40%;
+    top: 44%;
+  }
+}
+
+/* line 138, ../resources/scss/layout/_third-article1.scss */
+.tldr-mult, .trending-discussion {
+  width: 29%;
+  height: 55%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 33%;
+  top: 41%;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  /* line 144, ../resources/scss/layout/_third-article1.scss */
+  .tldr-mult:after, .trending-discussion:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 97.5%;
+    border: 1px solid #666;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    z-index: 10;
+    width: 0;
+    left: 100.2%;
+  }
+}
+/* line 150, ../resources/scss/layout/_third-article1.scss */
+.tldr-mult:before, .trending-discussion:before {
   content: "";
   position: absolute;
   top: 0px;
-  left: 332px;
-  border: 1px solid #919191;
+  left: 97.5%;
+  border: 1px solid #666;
   border-width: 1px 1px 0 0;
   display: block;
   width: 8px;
   height: 8px;
   z-index: 10;
   border-width: 1px 0 0 1px;
-  left: -3px;
+  left: 0;
+  width: 0;
+}
+@media screen and (max-width: 1025px) {
+  /* line 138, ../resources/scss/layout/_third-article1.scss */
+  .tldr-mult, .trending-discussion {
+    display: none;
+  }
+}
+
+/* line 159, ../resources/scss/layout/_third-article1.scss */
+.uber-google {
+  float: left;
+  width: 29%;
+  height: 67%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 66%;
+  top: 30%;
+  width: 30%;
+  border-top: 1px solid #ddd;
+  border-right: none;
+}
+@media screen and (max-width: 1025px) {
+  /* line 159, ../resources/scss/layout/_third-article1.scss */
+  .uber-google {
+    width: 45.5%;
+    height: 40%;
+    left: 50%;
+    top: 44%;
+  }
+}
+
+/* line 173, ../resources/scss/layout/_third-article1.scss */
+.article-headertext-common, .article-authordate-common .article-author {
+  font-size: 27px;
+  color: black;
+}
+/* line 177, ../resources/scss/layout/_third-article1.scss */
+.article-headertext-common:hover, .article-authordate-common .article-author:hover {
+  color: #fa4b2a;
+  text-decoration: underline;
+}
+
+/* line 182, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common {
+  width: 100%;
+  height: auto;
+  padding: 5px 5px 5px 0;
+}
+/* line 186, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common .article-author {
+  font-size: 11px;
+  padding-right: 5px;
+  border-right: 1px solid black;
+}
+/* line 192, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common .article-date {
+  font-size: 11px;
+  color: #666;
+  font-style: normal;
+}
+/* line 198, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common a .article-comment {
+  float: right;
+  font-size: 13px;
+  padding: .1rem .1rem .1rem;
+  sline-height: .8;
+  background-color: #666;
+  position: relative;
+  color: white;
+}
+/* line 207, ../resources/scss/layout/_third-article1.scss */
+.article-authordate-common a .article-comment:before {
+  border: 0 solid transparent;
+  border-top-color: black;
+  border-width: 5px 7px 0px 0px;
+  position: absolute;
+  content: '';
+  top: 19px;
+  left: 8px;
+}
+
+/* line 220, ../resources/scss/layout/_third-article1.scss */
+.link, .article-content .bignews {
+  color: #fa4b2a;
+}
+/* line 223, ../resources/scss/layout/_third-article1.scss */
+.link:hover, .article-content .bignews:hover {
+  text-decoration: underline;
+}
+
+/* line 228, ../resources/scss/layout/_third-article1.scss */
+.article-content {
+  margin-top: 10px;
+}
+/* line 231, ../resources/scss/layout/_third-article1.scss */
+.article-content a .article-image {
+  width: 100%;
+  height: 150px;
+}
+/* line 235, ../resources/scss/layout/_third-article1.scss */
+.article-content .bignews {
+  font-style: italic;
+  font-size: 30px;
+}
+@media screen and (max-width: 1025px) {
+  /* line 235, ../resources/scss/layout/_third-article1.scss */
+  .article-content .bignews {
+    font-size: 20px;
+  }
+}
+
+/* line 246, ../resources/scss/layout/_third-article1.scss */
+.article-text, .nintendo-article-text {
+  padding: 10px 0 10px 0;
+  position: relative;
+  top: 0;
+}
+@media screen and (max-width: 1025px) {
+  /* line 246, ../resources/scss/layout/_third-article1.scss */
+  .article-text, .nintendo-article-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* line 259, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-article-text:before {
+    position: absolute;
+    content: '';
+    border: 1px solid #919191;
+    border-width: 0px 0px 1px 1px;
+    bottom: -32px;
+    z-index: 25;
+    left: 317px;
+    height: 8px;
+    top: 100px;
+  }
+  /* line 263, ../resources/scss/layout/_third-article1.scss */
+  .nintendo-article-text:after {
+    position: absolute;
+    content: '';
+    border: 1px solid #919191;
+    border-width: 0px 0px 1px 1px;
+    bottom: -32px;
+    z-index: 25;
+    left: 657px;
+    height: 8px;
+    top: 100px;
+  }
+}
+
+/* line 270, ../resources/scss/layout/_third-article1.scss */
+.tldr-data {
+  padding: 10px;
+}
+/* line 272, ../resources/scss/layout/_third-article1.scss */
+.tldr-data .tldr-date-content {
+  color: #666;
+  font-size: 13px;
+}
+/* line 276, ../resources/scss/layout/_third-article1.scss */
+.tldr-data .tdlr-content {
+  font-size: 20px;
+}
+/* line 278, ../resources/scss/layout/_third-article1.scss */
+.tldr-data .tdlr-content:hover {
+  color: #fa4b2a;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 9, ../resources/scss/layout/_fifth-article2.scss */
+  .second-article {
+    width: 100%;
+    height: 1025px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  /* line 9, ../resources/scss/layout/_fifth-article2.scss */
+  .second-article {
+    border: 1px solid #ddd;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 9, ../resources/scss/layout/_fifth-article2.scss */
+  .second-article {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* line 23, ../resources/scss/layout/_fifth-article2.scss */
+  .second-article-short {
+    width: 100%;
+    height: auto;
+  }
+  /* line 28, ../resources/scss/layout/_fifth-article2.scss */
+  .second-article-short ul li {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border: 1px solid #222;
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 23, ../resources/scss/layout/_fifth-article2.scss */
+  .second-article-short {
+    display: none;
+  }
+}
+
+/* line 43, ../resources/scss/layout/_fifth-article2.scss */
+.trending-discussion {
+  width: 30%;
+  border: none;
+  left: 66%;
+  top: 0px;
+}
+/* line 50, ../resources/scss/layout/_fifth-article2.scss */
+.trending-discussion:after {
+  display: none;
+}
+/* line 53, ../resources/scss/layout/_fifth-article2.scss */
+.trending-discussion:before {
+  left: 0;
+  width: 8px;
+}
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  /* line 43, ../resources/scss/layout/_fifth-article2.scss */
+  .trending-discussion {
+    display: initial;
+    top: 94%;
+    left: 0%;
+    width: 45.5%;
+    border: 1px solid #ddd;
+  }
+}
+
+/* line 63, ../resources/scss/layout/_fifth-article2.scss */
+.big-ren {
+  width: 29%;
+  height: 55%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 33%;
+  top: 41%;
+  float: left;
+  border-top: 1px solid #ddd;
+}
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  /* line 63, ../resources/scss/layout/_fifth-article2.scss */
+  .big-ren {
+    display: initial;
+    top: 48%;
+    left: 0%;
+    width: 45.5%;
+    height: 42%;
+  }
+}
+/* line 73, ../resources/scss/layout/_fifth-article2.scss */
+.big-ren:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 97.5%;
+  border: 1px solid #666;
+  border-width: 1px 1px 0 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  z-index: 10;
+  left: 0;
+}
+/* line 78, ../resources/scss/layout/_fifth-article2.scss */
+.big-ren:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 97.5%;
+  border: 1px solid #666;
+  border-width: 1px 1px 0 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  z-index: 10;
+  width: 0px;
+  left: 100.2%;
+}
+
+/* line 84, ../resources/scss/layout/_fifth-article2.scss */
+.verge-playlist {
+  width: 29%;
+  height: 39%;
+  border: 1px solid #ddd;
+  padding: 1.3rem;
+  border: none;
+  border-right: 1px solid #ddd;
+  position: absolute;
+  left: 66%;
+  top: 57%;
+  border-top: 1px solid #ddd;
+  border-right: none;
+}
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  /* line 84, ../resources/scss/layout/_fifth-article2.scss */
+  .verge-playlist {
+    display: initial;
+    top: 94%;
+    left: 50%;
+    width: 45.5%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  /* line 95, ../resources/scss/layout/_fifth-article2.scss */
+  .apple-watch {
+    height: 45%;
+  }
+}
+
+/* line 105, ../resources/scss/layout/_fifth-article2.scss */
+.online-gaming:before {
+  left: 0;
+}
+/* line 108, ../resources/scss/layout/_fifth-article2.scss */
+.online-gaming:after {
+  width: 8px;
+  left: 98%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  /* line 113, ../resources/scss/layout/_fifth-article2.scss */
+  .google-play {
+    top: 48%;
+    left: 50%;
+  }
+}
+
+/* line 120, ../resources/scss/layout/_fifth-article2.scss */
+.top-link {
+  position: absolute;
+  top: -1px;
+  padding: 1px 5px;
+  background-color: #fa4b2a;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 128, ../resources/scss/layout/_fifth-article2.scss */
+.updates {
+  background-color: black;
+  color: white;
+  width: 65px;
+  height: auto;
+  position: relative;
+  content: '';
+  z-index: 1;
+  float: left;
+}
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  /* line 128, ../resources/scss/layout/_fifth-article2.scss */
+  .updates {
+    width: 90px;
+  }
+}
+/* line 138, ../resources/scss/layout/_fifth-article2.scss */
+.updates:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-color: black;
+  border-width: 9px 0 9px 8px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+@media screen and (min-width: 600px) and (max-width: 1025px) {
+  /* line 138, ../resources/scss/layout/_fifth-article2.scss */
+  .updates:after {
+    border-width: 11px 0 11px 8px;
+  }
+}
+
+/* line 149, ../resources/scss/layout/_fifth-article2.scss */
+.see-all {
+  background-color: #fa4b2a;
+  padding-left: 9px;
+  color: white;
+  width: 65px;
+  height: auto;
+  position: relative;
+  content: '';
+}
+/* line 154, ../resources/scss/layout/_fifth-article2.scss */
+.see-all:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-color: black;
+  border-width: 9px 0 9px 8px;
+  position: absolute;
+  border-left-color: #fa4b2a;
+}
+
+/* line 3, ../resources/scss/helpers/_base.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../resources/scss/helpers/_base.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 12, ../resources/scss/helpers/_base.scss */
+body {
+  background-color: white;
+  font-color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Slabo 27px", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+@media screen and (min-width: 600px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 12, ../resources/scss/helpers/_base.scss */
+  body {
+    font-size: 15px;
+  }
+}
+
+/* line 32, ../resources/scss/helpers/_base.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 37, ../resources/scss/helpers/_base.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 41, ../resources/scss/helpers/_base.scss */
+h2 {
+  color: white;
+  font-family: Adelle, Georgia, serif;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 6, ../resources/scss/layout/_sixth-story-streams.scss */
+  .storystreams {
+    width: 100%;
+    height: 675px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 600px) and (max-width: 1025px) {
+  /* line 6, ../resources/scss/layout/_sixth-story-streams.scss */
+  .storystreams {
+    top: 550px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 15, ../resources/scss/layout/_sixth-story-streams.scss */
+  .storystreams .most-recent-storystreams {
+    width: 100%;
+    height: 68px;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    z-index: 20;
+    margin-top: -70px;
+  }
+  /* line 24, ../resources/scss/layout/_sixth-story-streams.scss */
+  .storystreams .most-recent-storystreams .most-recent-image {
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+  }
+  /* line 28, ../resources/scss/layout/_sixth-story-streams.scss */
+  .storystreams .most-recent-storystreams .most-recent-text {
+    float: left;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    text-align: center;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+  }
+  /* line 37, ../resources/scss/layout/_sixth-story-streams.scss */
+  .storystreams .most-recent-storystreams .storystreams {
+    width: auto;
+    height: auto;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    left: 105px;
+    padding: 0.5rem;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 6, ../resources/scss/layout/_sixth-story-streams.scss */
+  .storystreams {
+    display: none;
+  }
+}
+
+/* line 55, ../resources/scss/layout/_sixth-story-streams.scss */
+.multi-link {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 59, ../resources/scss/layout/_sixth-story-streams.scss */
+.multi-content-sec1 {
+  content: '';
+  border-top: 3px solid black;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 21;
+  background-color: #f7f1ee;
+  font-size: 15px;
+}
+/* line 222, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content1 {
+  background: url("../resources/images/first-click-spain.0.0.png") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 226, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content1:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #d38312, #002f4b);
+  background-image: linear-gradient(135deg, #d38312, #002f4b);
+}
+/* line 230, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content1:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #417711, #002f4b);
+  background-image: linear-gradient(135deg, #417711, #002f4b);
+}
+/* line 233, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content1 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+/* line 239, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content2 {
+  background: url("../resources/images/apple-watch-notif-stock-IMG_3397_copy.0.0.jpg") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 243, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content2:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #a83279, #002f4b);
+  background-image: linear-gradient(135deg, #a83279, #002f4b);
+}
+/* line 247, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content2:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #292484, #dc4225);
+  background-image: linear-gradient(135deg, #292484, #dc4225);
+}
+/* line 250, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content2 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+/* line 256, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content3 {
+  background: url("../resources/images/watchlead.0.0.jpg") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 260, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content3:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #417711, #292484);
+  background-image: linear-gradient(135deg, #417711, #292484);
+}
+/* line 264, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content3:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #dc4225, #002f4b);
+  background-image: linear-gradient(135deg, #dc4225, #002f4b);
+}
+/* line 267, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec1 a .multi-content3 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+
+/* line 62, ../resources/scss/layout/_sixth-story-streams.scss */
+.multi-content-sec2 {
+  content: '';
+  border-top: 3px solid black;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 21;
+  background-color: #f7f1ee;
+  font-size: 15px;
+  top: 270px;
+  border-top: 3px solid #ddd;
+}
+/* line 222, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content1 {
+  background: url("../resources/images/ef989fe2-5c9b-4437-ad74-eebf34fbb625.0.0.jpg") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 226, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content1:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #d38312, #002f4b);
+  background-image: linear-gradient(135deg, #d38312, #002f4b);
+}
+/* line 230, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content1:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #417711, #002f4b);
+  background-image: linear-gradient(135deg, #417711, #002f4b);
+}
+/* line 233, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content1 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+/* line 239, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content2 {
+  background: url("../resources/images/vrg_vho_348_hololens_header_720.0.0.png") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 243, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content2:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #a83279, #002f4b);
+  background-image: linear-gradient(135deg, #a83279, #002f4b);
+}
+/* line 247, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content2:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #292484, #dc4225);
+  background-image: linear-gradient(135deg, #292484, #dc4225);
+}
+/* line 250, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content2 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+/* line 256, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content3 {
+  background: url("../resources/images/hololensehandson5_1020.0.0.jpg") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 260, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content3:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #417711, #292484);
+  background-image: linear-gradient(135deg, #417711, #292484);
+}
+/* line 264, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content3:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #dc4225, #002f4b);
+  background-image: linear-gradient(135deg, #dc4225, #002f4b);
+}
+/* line 267, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec2 a .multi-content3 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+
+/* line 67, ../resources/scss/layout/_sixth-story-streams.scss */
+.multi-content-sec3 {
+  content: '';
+  border-top: 3px solid black;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 21;
+  background-color: #f7f1ee;
+  font-size: 15px;
+  top: 470px;
+  border-top: 3px solid #ddd;
+}
+/* line 222, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content1 {
+  background: url("../resources/images/Screen_Shot_2015-05-06_at_12.12.54_PM.0.0.png") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 226, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content1:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #d38312, #002f4b);
+  background-image: linear-gradient(135deg, #d38312, #002f4b);
+}
+/* line 230, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content1:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #417711, #002f4b);
+  background-image: linear-gradient(135deg, #417711, #002f4b);
+}
+/* line 233, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content1 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+/* line 239, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content2 {
+  background: url("../resources/images/Nexus-Family.0.0.jpg") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 243, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content2:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #a83279, #002f4b);
+  background-image: linear-gradient(135deg, #a83279, #002f4b);
+}
+/* line 247, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content2:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #292484, #dc4225);
+  background-image: linear-gradient(135deg, #292484, #dc4225);
+}
+/* line 250, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content2 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+/* line 256, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content3 {
+  background: url("../resources/images/Screen_Shot_2015-04-22_at_4.45.59_PM.0.0.png") no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 200px;
+  float: left;
+  position: relative;
+}
+/* line 260, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content3:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(135deg, #417711, #292484);
+  background-image: linear-gradient(135deg, #417711, #292484);
+}
+/* line 264, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content3:hover:after {
+  background-image: -webkit-linear-gradient(135deg, #dc4225, #002f4b);
+  background-image: linear-gradient(135deg, #dc4225, #002f4b);
+}
+/* line 267, ../resources/scss/helpers/_mixins.scss */
+.multi-content-sec3 a .multi-content3 h3 {
+  position: absolute;
+  z-index: 25;
+  padding: 8px;
+  top: 55px;
+  color: white;
+  font-weight: normal;
+}
+
+/* line 73, ../resources/scss/layout/_sixth-story-streams.scss */
+.flap-over1 {
+  content: '';
+  width: 650px;
+  padding: 0.2rem;
+  background-color: #fcb400;
+  z-index: 2;
+  top: 130px;
+  position: absolute;
+  left: -25px;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 287, ../resources/scss/helpers/_mixins.scss */
+.flap-over1 h3 {
+  font-size: 15px;
+  margin-left: 15px;
+  font-style: italic;
+}
+/* line 293, ../resources/scss/helpers/_mixins.scss */
+.flap-over1:before {
+  border: 0 solid transparent;
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right-color: #966b00;
+  border-width: 0 20px 20px 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+/* line 302, ../resources/scss/helpers/_mixins.scss */
+.flap-over1 p {
+  font-size: 11px;
+  font-style: normal;
+}
+
+/* line 76, ../resources/scss/layout/_sixth-story-streams.scss */
+.flap-over2 {
+  content: '';
+  width: 650px;
+  padding: 0.2rem;
+  background-color: #fa4b2a;
+  z-index: 2;
+  top: 130px;
+  position: absolute;
+  left: -25px;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 287, ../resources/scss/helpers/_mixins.scss */
+.flap-over2 h3 {
+  font-size: 15px;
+  margin-left: 15px;
+  font-style: italic;
+}
+/* line 293, ../resources/scss/helpers/_mixins.scss */
+.flap-over2:before {
+  border: 0 solid transparent;
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right-color: #ba2104;
+  border-width: 0 20px 20px 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+/* line 302, ../resources/scss/helpers/_mixins.scss */
+.flap-over2 p {
+  font-size: 11px;
+  font-style: normal;
+}
+
+/* line 79, ../resources/scss/layout/_sixth-story-streams.scss */
+.flap-over3 {
+  content: '';
+  width: 650px;
+  padding: 0.2rem;
+  background-color: #31bdd0;
+  z-index: 2;
+  top: 130px;
+  position: absolute;
+  left: -25px;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 287, ../resources/scss/helpers/_mixins.scss */
+.flap-over3 h3 {
+  font-size: 15px;
+  margin-left: 15px;
+  font-style: italic;
+}
+/* line 293, ../resources/scss/helpers/_mixins.scss */
+.flap-over3:before {
+  border: 0 solid transparent;
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right-color: #1d737e;
+  border-width: 0 20px 20px 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+/* line 302, ../resources/scss/helpers/_mixins.scss */
+.flap-over3 p {
+  font-size: 11px;
+  font-style: normal;
+}
+
+/* line 83, ../resources/scss/layout/_sixth-story-streams.scss */
+.left-scroll-move {
+  width: 5%;
+  height: 100%;
+  float: left;
+}
+
+/* line 87, ../resources/scss/layout/_sixth-story-streams.scss */
+.lright-scroll-move {
+  width: 5%;
+  height: 100%;
+  float: right;
+}
+
+/* line 91, ../resources/scss/layout/_sixth-story-streams.scss */
+.scroll, .left-scroll, .right-scroll {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  position: relative;
+}
+
+/* line 98, ../resources/scss/layout/_sixth-story-streams.scss */
+.left-scroll {
+  border-width: 15px 15px 15px 8px;
+  top: 90px;
+  border-right-color: #ddd;
+}
+/* line 104, ../resources/scss/layout/_sixth-story-streams.scss */
+.left-scroll:after {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 6px;
+  background-color: #ddd;
+  left: 15px;
+  bottom: -8px;
+  height: 15px;
+}
+
+/* line 112, ../resources/scss/layout/_sixth-story-streams.scss */
+.right-scroll {
+  border-left-color: #666;
+  border-width: 15px 0px 15px 14px;
+  float: right;
+  top: 65px;
+  right: 15px;
+}
+/* line 120, ../resources/scss/layout/_sixth-story-streams.scss */
+.right-scroll:before {
+  opacity: .7;
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 6px;
+  background-color: #222;
+  left: -19px;
+  bottom: -8px;
+  height: 15px;
+}
+
+/* line 129, ../resources/scss/layout/_sixth-story-streams.scss */
+.footer {
+  height: auto;
+  padding: 1rem;
+  background-color: #f7f1ee;
+  border: 1px solid #ddd;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+/* line 138, ../resources/scss/layout/_sixth-story-streams.scss */
+.footer:hover {
+  text-decoration: underline;
 }
