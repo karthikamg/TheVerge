@@ -1,0 +1,148 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+
+// -webkit-columns: 100px 3; 
+    // -moz-columns: 100px 3; 
+    // columns: 100px 3;
+
+    // -webkit-column-rule: 4px outset #ff00ff;
+    // -moz-column-rule: 4px outset #ff00ff; 
+    // column-rule: 4px outset #ff00ff;
+
+.column{
+	@include size(24.85%,100%);
+	// padding: 1rem;
+	border: 1px solid $color-grey;
+	border-left: none;
+	border-bottom: none;
+	@include float-left;
+	height: 1420px;
+	position: relative;
+
+	@media screen and (max-width: 700px){
+		height: 1250px;
+	}
+	@media screen and (min-width: 700px) and (max-width: 850px){
+		height: 1150px;
+	}
+	@media screen and (min-width: 850px) and (max-width: 950px){
+		height: 1100px;
+	}
+	@media screen and (min-width: 950px) and (max-width: 1000px){
+		height: 1020px;
+	}
+	@media screen and (min-width: 600px) and (max-width: 1000px){
+		top: 700px;
+		width: 49.5%;
+		// height: 1220px;
+	}
+}
+
+.colrow-with-photo{
+	// @include size(100%,);
+	padding: 1rem;
+	border-top: 1px solid $color-grey;
+	border-bottom: none;
+	position: relative;
+
+	@media screen and (max-width: 1000px){
+		width: 94%;
+	}
+}
+
+.column-articles{
+	@include size(100%,1420px);
+	position: relative;
+
+	@media screen and (max-width: 600px){
+		display: none;
+	}
+
+	@media screen and (max-width: 1000px){
+		height: 1200px;
+	}
+	
+	.column-one{
+		@extend .column;
+		border-left: 1px solid $color-grey;
+
+		@media screen and (max-width: 1000px){
+			top: 700px;
+		}
+	}
+	.column-two{
+		@extend .column;
+
+		@media screen and (max-width: 1000px){
+			top: 700px;
+		}
+	}
+	.column-three{
+		@extend .column;
+	}
+	.column-four{
+		@extend .column;
+	}
+}
+
+.drop-image-link{
+	display: block;
+
+	li{
+		@include size(100%, 150px);
+	}
+}
+
+.max-max{
+	@include img-link-size('../resources/images/FRD-DS-00694rv2.0.0.jpg');
+	@include size(100%,100%);
+}
+.silicon-valley{
+	@include img-link-size('../resources/images/FXT17397.0.0.jpg',$color4-greenlake,$color6-sandal);
+	@include size(100%,100%);
+}
+.play-ground{
+	@include img-link-size('../resources/images/porsche-experience-center-008-2040.0.0.jpg',$color7-lightyellow,$color5-pink);
+	@include size(100%,100%);
+}
+.invisible{
+	@include img-link-size('../resources/images/2._Hostile-Takeover.0.0.png',$color2-darkpink,$color3-navyblue);
+	@include size(100%,100%);
+}	
+
+.footer{
+	height: 50px;
+	padding: 1rem;
+	background-color: $color-ivory;
+	border: 1px solid $color-grey;
+	text-align: center;
+	text-transform: uppercase;	
+	position: relative;
+	z-index: 1;
+	top: 0px;
+
+	.footer-text{
+		color: $color-red;
+		position: absolute;
+		z-index: 2;
+		top: 20px;
+	    left: 450px;
+	    padding: 1rem;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	@media screen and (min-width: 600px) and (max-width: 700px){
+		top: 2000px;
+	}
+	@media screen and (min-width: 700px) and (max-width: 1000px){
+		top: 1800px;
+	}
+	@media screen and (min-width: 1000px){
+		top: 0px;
+	}
+}
+

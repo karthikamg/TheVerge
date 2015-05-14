@@ -94,13 +94,13 @@
 	@media screen and (min-width: 1025px){
 		&:after{
 			@include article-edge(0px);
-			left: 653px;
+			// left: 653px;
 		}
 		&:before{
 			@include article-edge(0px);
 			float: right;
 			border-width: 1px 0 0 1px;
-			left: 315px;
+			left: 0px;
 		}
 	}
 

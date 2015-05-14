@@ -204,24 +204,38 @@
 	position: absolute;
     z-index: 25;
     padding: 8px;
-    top: 55px;
+    top: 15px;
     color: $color-white;
     font-weight: normal;
 }
 
 @mixin multi-content($path1: '../resources/images/cannes.jpg',$path2: '../resources/images/cannes.jpg',$path3: '../resources/images/cannes.jpg'){
 	content: '';
-	border-top: 3px solid $color-black;
 	@include size(100%, auto);
 	position: absolute;
 	z-index: 21;
 	background-color: $color-ivory;
 	font-size: 15px;
 
+	@media screen and (min-width: 600px) and (max-width: 1025px){
+		overflow-x: scroll;
+	    display: inline-block;
+	    width: 100%;
+	    height: 200px;
+	    background-color: black;
+	    overflow-y: hidden;
+	    max-width: 1500px;
+	    display: inline-block;
+	}
+
 	a{
 			.multi-content1{
 			@include bg-img($path1,30%,200px);
 			// left: 5%;
+
+			@media screen and (min-width: 600px) and (max-width: 1025px){
+				width: 400px;
+			}
 
 			&:after{
 				@include image-after;
@@ -240,9 +254,15 @@
 		@include bg-img($path2,30%,200px);
 		// left: 5%;
 
+		@media screen and (min-width: 600px) and (max-width: 1025px){
+			width: 400px;
+			// left: 400px;
+		}
+
 		&:after{
 			@include image-after;
 			@include linear-gradient($color5-pink,$color3-navyblue);
+			// left: -0px;
 		}
 		&:hover:after{
 			@include linear-gradient($color1-offnavyblue,$color2-darkpink);
@@ -257,9 +277,16 @@
 		@include bg-img($path3,30%,200px);
 		// left: 5%;
 
+		@media screen and (min-width: 600px) and (max-width: 1025px){
+			width: 400px;
+			left: 800px;
+			float: none;
+		}
+
 		&:after{
 			@include image-after;
 			@include linear-gradient($color4-greenlake,$color1-offnavyblue);
+			left: -0px;
 		}
 		&:hover:after{
 			@include linear-gradient($color2-darkpink,$color3-navyblue);
@@ -303,4 +330,34 @@
 		font-size: 11px;
 		font-style: normal;
 	}
+}
+
+@mixin img-link-size($path: '../resources/images/cannes.jpg',$color1: $color2-darkpink, $color2: $color1-offnavyblue){
+	@include size(32.5%,100%);
+	background: url($path) no-repeat;
+	background-size: cover;
+	@include float-left;
+	position: relative;
+
+	&:after{
+		@include image-after(100%,100%);
+		@include linear-gradient($color1,$color2);
+	}
+	&:hover:after{
+		@include linear-gradient($color2,$color1);
+	}
+
+}
+
+@mixin verge-score-style($color: $color7-lightyellow){
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include size(50px,50px);
+	padding: 1rem;
+	text-transform: uppercase;
+	background-color: $color;
+	color: white;
+	z-index: 2;
+	font-weight: bold;
 }

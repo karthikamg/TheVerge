@@ -41,25 +41,27 @@
 
 
 .trending-discussion{
-  @extend .tldr-mult;
+  @include article-image-link(55%,0%,66%);
+  border-top: 1px solid $color-grey;
+  text-align: center;
   width: 30%;
-  border: none;
-  left: 66%;
-  top: 0px;
-
-  &:after{
-  	display: none;
-  }
+  
   &:before{
-  	left: 0;
-  	width: 8px;
+    @include article-before(0);
+    left: 0;
+    width: 8px;
   }
 
   @media screen and (min-width: 600px) and (max-width: 1025px){
-  		@include article2-content-style(94%);
-  		border: 1px solid $color-grey;
+      @include article2-content-style(94%);
+      border: 1px solid $color-grey;
+  }
+  @media screen and (max-width: 1025px){
+    display: none;
   }
 }
+
+
 .big-ren{
   @include article-image-link(55%,41%,33%);
   float: left;
@@ -68,11 +70,14 @@
    @media screen and (min-width: 600px) and (max-width: 1025px){
   		@include article2-content-style;
   		height: 42%;
+      top: 44%;
+      left: 50%;
   	}
 
   &:before{
   	  @include article-edge;
-	  left: 0;
+	    left: 0;
+      width: 0;
   }
 
   &:after{	  
@@ -82,14 +87,15 @@
   }
 }
 .verge-playlist{
-  @extend .fb-img;
+  @media screen and (min-width: 1025px){ 
   @include article-image-link(39%,57%,66%);
   border-top: 1px solid $color-grey;
   border-right: none;
 
-  @media screen and (min-width: 600px) and (max-width: 1025px){
-  		@include article2-content-style(94%,50%);
-  	}
+  }
+  @media screen and (max-width: 1025px){
+    display: none;
+  }
 }
 
 .apple-watch{

@@ -4,14 +4,44 @@
 @import 'helpers/_variables';
 
 .storystreams{
+
+	.most-recent-storystreams{
+		margin-top: -10px;
+	}
+
 	@media screen and (min-width: 600px){
 		@include size(100%, 675px);
 		position: relative;
 
 		@media screen and (min-width: 600px) and (max-width: 1025px){
-			top: 550px
+			top: 695px;
+		}
+	}
+	@media screen and (max-width: 600px){
+		display: none;
+	}
+}
+.photo-essays{
+	@extend .storystreams;
+	@include size(100%,272px);
+
+	.most-recent-storystreams{
+		margin-top: -70px;
+	}
+
+	@media screen and (min-width: 600px) and (max-width: 1025px){
+			top: 560px;
 		}
 
+	@media screen and (min-width: 600px) and (max-width: 1025px){
+		.most-recent-storystreams{
+			margin-top: -680px;
+		}
+	}
+	
+}
+
+@media screen and (min-width: 600px){
 	.most-recent-storystreams{
 		@include size(100%,68px);
 		text-align: left;
@@ -34,7 +64,7 @@
 		    transform: rotate(-10deg);
 		    -webkit-transform: rotate(-10deg);		    
 		}
-		.storystreams{
+		.photo-story{
 			@include size(auto, auto);
 		    background-color: $color-black;
 		    position: absolute;
@@ -42,51 +72,95 @@
 		    left: 105px;
 		    padding: 0.5rem;
 		    font-style: italic;
-			}
 		}
-	}
-	@media screen and (max-width: 600px){
-		display: none;
-	}
-	
+		}
 }
 
 
 .multi-link{
-	@include size(100%, auto);
+	@include size(100%, 607px);
 	display: block;
+	border-top: 3px solid $color-black;
+
+	li{
+		border: 1px solid $color-strong-grey;
+	}
 }
+
+.photoessay-multi-link{
+	@extend .multi-link;
+	@include size(100%,200px)
+}
+
+.multi-photoessay-content1{
+	@include multi-content('../resources/images/17403200071_daabc85148_o.0.0.jpg','../resources/images/rolls-royce-wraith-inspired-by-fashion-unveil-IMG_9447-vrg-rm-2015.0.0.jpg','../resources/images/RR_3575_Front_3Q.0.0.jpg');
+
+	.author-date-comment{
+		position: absolute; 
+		z-index: 2;
+		color: $color-white;
+		padding: 0.5rem;
+		top: 105px;
+		font-size: 14px;
+	}
+}
+
 .multi-content-sec1{
 	@include multi-content('../resources/images/first-click-spain.0.0.png','../resources/images/apple-watch-notif-stock-IMG_3397_copy.0.0.jpg','../resources/images/watchlead.0.0.jpg');
 }
 .multi-content-sec2{
 	@include multi-content('../resources/images/ef989fe2-5c9b-4437-ad74-eebf34fbb625.0.0.jpg','../resources/images/vrg_vho_348_hololens_header_720.0.0.png','../resources/images/hololensehandson5_1020.0.0.jpg');
 	top: 270px;
-	border-top: 3px solid $color-grey;
 }
 .multi-content-sec3{
 	@include multi-content('../resources/images/Screen_Shot_2015-05-06_at_12.12.54_PM.0.0.png','../resources/images/Nexus-Family.0.0.jpg','../resources/images/Screen_Shot_2015-04-22_at_4.45.59_PM.0.0.png');
 	top: 470px;
-	border-top: 3px solid $color-grey;
 }
 
 .flap-over1{
 	@include flap-over($color-lightyellow,$color-darkyellow);
+
+	// @media screen and (max-width: 1025px){
+	// 	position: fixed;
+	// 	top: 200px;
+	// }
 }
 .flap-over2{
 	@include flap-over($color-logo,$color-darkorange);
+
+	// @media screen and (max-width: 1025px){
+	// 	position: fixed;
+	// 	top: 200px;
+	// }
 }
 .flap-over3{
 	@include flap-over($color-skyblue,$color-strong-skyblue);
+
+	// @media screen and (max-width: 1025px){
+	// 	position: fixed;
+	// 	top: 200px;
+	// }
 }
 
 .left-scroll-move{
-	@include size(5%, 100%);
+	@include size(5%, 200px);
 	@include float-left;
+
+	@media screen and (max-width: 1025px){
+		display: none;
+	}
 }
-.lright-scroll-move{
-	@include size(5%, 100%);
+.right-scroll-move{
+	@include size(5%, 200px);
 	@include float-right;
+
+	@media screen and (max-width: 1025px){
+		display: none;
+	}
+
+	&:hover{
+		background-color: $color-strong-ivory
+	}
 }
 .scroll{
 	content: '';		
@@ -114,8 +188,8 @@
 	border-left-color: $color-strong-grey;
 	border-width: 15px 0px 15px 14px;
 	@include float-right;
-	top: 65px;
-	right: 15px;
+	top: 95px;
+	left: -5px;
 
 	&:before{
 		@include image-after(5px, 6px);
@@ -123,19 +197,5 @@
 		left: -19px;
   		bottom: -8px;
   		height: 15px;
-	}
-}
-
-.footer{
-	height: auto;
-	padding: 1rem;
-	background-color: $color-ivory;
-	border: 1px solid $color-grey;
-	text-align: center;
-	text-transform: uppercase;
-	color: $color-red;
-
-	&:hover{
-		text-decoration: underline;
 	}
 }
