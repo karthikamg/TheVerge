@@ -137,6 +137,13 @@
 	@include float-left;
 	position: relative;
 }
+
+@mixin header-dpimg($path: '../resources/images/cannes.jpg'){
+	background: url($path) no-repeat;
+	background-size: cover;
+	margin-left: 2%;
+	position: relative;
+}
 @mixin databreaker($path: '../resources/images/cannes.jpg'){
 	@include bg-img($path,50%,100%);
 
@@ -213,7 +220,7 @@
 	content: '';
 	@include size(100%, auto);
 	position: absolute;
-	z-index: 21;
+	// z-index: 21;
 	background-color: $color-ivory;
 	font-size: 15px;
 
@@ -254,9 +261,13 @@
 		@include bg-img($path2,30%,200px);
 		// left: 5%;
 
-		@media screen and (min-width: 600px) and (max-width: 1025px){
+		@media screen and (min-width: 600px) and (max-width: 810px){
 			width: 400px;
-			// left: 400px;
+			left: 400px;
+			top: -200px;
+		}
+		@media screen and (min-width: 815px) and (max-width: 1025px){
+			width: 400px;
 		}
 
 		&:after{
@@ -360,4 +371,26 @@
 	color: white;
 	z-index: 2;
 	font-weight: bold;
+}
+
+.show{
+	display: initial;
+}
+.hide{
+	display: none;
+}
+
+@mixin link-image-style($path: '../resources/images/cannes.jpg'){
+	background: url($path) no-repeat;
+	background-size: cover;
+	@include float-left;
+	position: relative;
+} 
+
+@mixin image-link-after($color1:$color4-greenlake ,$color2:$color1-offnavyblue){
+	@include image-after;
+	@include linear-gradient($color1,$color2);
+	z-index: 2;
+	left: -0;
+	top: 0;
 }

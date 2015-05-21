@@ -11,6 +11,26 @@
     // -moz-column-rule: 4px outset #ff00ff; 
     // column-rule: 4px outset #ff00ff;
 
+
+//     div.inflow {
+//   width: 200px; 
+//   height: 1000px; 
+//   border: 1px solid blue; 
+//   float: right; 
+//   position: relative; 
+//   margin-right: 100px;
+// }
+// div.positioner {position: absolute; right: 0;} /*may not be needed: see below*/
+// div.fixed {
+//   width: 80px; 
+//   border: 1px solid red; 
+//   height: 100px; 
+//   position: fixed; 
+//   top: 60px; 
+//   margin-left: 15px;
+// }
+
+
 .column{
 	@include size(24.85%,100%);
 	// padding: 1rem;
@@ -55,6 +75,10 @@
 .column-articles{
 	@include size(100%,1420px);
 	position: relative;
+
+	@media screen and (min-width: 1000px) and (max-width: 1025px){
+		top: 700px;
+	}
 
 	@media screen and (max-width: 600px){
 		display: none;
@@ -141,7 +165,10 @@
 	@media screen and (min-width: 700px) and (max-width: 1000px){
 		top: 1800px;
 	}
-	@media screen and (min-width: 1000px){
+	@media screen and (min-width: 1000px) and (max-width: 1025px){
+		top: 700px;
+	}
+	@media screen and (min-width: 1025px){
 		top: 0px;
 	}
 }

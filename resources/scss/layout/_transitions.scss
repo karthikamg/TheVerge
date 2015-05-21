@@ -1,0 +1,208 @@
+@import "compass";
+@import 'helpers/_base';
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+@import '_sixth-story-streams';
+
+.active{
+	z-index: 2;
+	position: absolute;	
+}
+
+.disabled{
+	z-index: 1;
+	position: absolute;	
+}
+
+.enter{
+	// left: 0;
+	transform: translate(0%);
+}
+
+.leave{
+	// transform: translate(100%);
+	transform: translate(-100%);
+}
+.wait{
+	// left: 100%;
+	// transform: translate(-100%);
+	transform: translate(100%);
+}
+
+// #photoessay-links{
+// 	@extend .photoessay-multi-link;
+// 	position: relative;
+// 	display: inline-block;
+// 	overflow: hidden;
+
+// 	#multi-link1{
+// 	@include multi-content('../resources/images/17403200071_daabc85148_o.0.0.jpg','../resources/images/rolls-royce-wraith-inspired-by-fashion-unveil-IMG_9447-vrg-rm-2015.0.0.jpg','../resources/images/RR_3575_Front_3Q.0.0.jpg');
+// 	transition: transform 1s;
+
+// 	.author-date-comment{
+// 		position: absolute; 
+// 		z-index: 2;
+// 		color: $color-white;
+// 		padding: 0.5rem;
+// 		top: 105px;
+// 		font-size: 14px;
+// 	}
+// }
+
+// #multi-link2{
+// 	@include multi-content('../resources/images/camaro-reveal-002-2040.0.0.jpg','../resources/images/DB2015AU00959_large.0.0.jpg','../resources/images/porsche-experience-center-008-2040.0.0.jpg');
+// 	transition: transform 1s;
+
+// 	.author-date-comment{
+// 		position: absolute; 
+// 		z-index: 2;
+// 		color: $color-white;
+// 		padding: 0.5rem;
+// 		top: 105px;
+// 		font-size: 14px;
+// 	}
+// }
+
+// #multi-link3{
+// 	@include multi-content('../resources/images/Mars.0.0.jpg','../resources/images/camaro-reveal-002-2040.0.0.jpg','../resources/images/WaterlichtRoosegaarde10.0.0.jpg');
+// 	transition: transform 1s;
+
+// 	.author-date-comment{
+// 		position: absolute; 
+// 		z-index: 2;
+// 		color: $color-white;
+// 		padding: 0.5rem;
+// 		top: 105px;
+// 		font-size: 14px;
+// 	}
+// }
+// }
+
+.photoessay-links{
+	position: relative;
+	@include size(100%,240px);
+	border: 1px solid $color-grey;
+	display: inline-block;
+}
+
+.prev{
+	@include size(5%, 100%);
+	@include float-left;
+	border-right: 1px solid $color-grey;
+	background-color: $color-ivory;
+
+	@media screen and (max-width: 1025px){
+		display: none;
+	}
+
+	// &:hover{
+	// 	background-color: $color-strong-ivory
+	// }
+}
+
+.next{
+	@include size(4.6%, 100%);
+	@include float-right;
+	border-left: 1px solid $color-grey;
+	background-color: $color-ivory;
+
+	@media screen and (max-width: 1025px){
+		display: none;
+	}
+
+	// &:hover{
+	// 	background-color: $color-strong-ivory
+	// }
+}
+
+.multi-links{
+	display: table;
+	// @include size(90.2%,100%);
+	@include size(100%,100%);
+	@include float-left;
+	position: absolute;
+	transition: transform 0.2s;
+
+	li{
+		display: table-cell;
+		overflow: hidden;
+	}
+} 
+
+.multi-links1{
+	@extend .multi-links;
+} 
+
+.eachlink{
+	@include size(100%,240px);
+	@include float-left;
+	position: relative;
+
+	img{
+		position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 1;
+	}
+	h3{
+		color: $color-white;
+		z-index: 3;
+  		position: absolute;
+  		padding: 7%;
+	}
+	small{
+		color: $color-white;
+		z-index: 3;
+  		position: absolute;
+  		top: 60%;
+  		padding: 7%;
+	}	
+
+}
+
+.author-date-comment{
+	position: absolute; 
+	z-index: 2;
+	color: $color-white;
+	padding: 0.5rem;
+	top: 105px;
+	font-size: 14px;
+}
+
+
+.multi-links li:nth-child(1) .eachlink:after {
+	@include image-link-after($color4-greenlake,$color1-offnavyblue);
+}
+.multi-links li:nth-child(1) .eachlink:hover:after{
+	@include linear-gradient($color6-sandal,$color3-navyblue);
+}
+
+
+.multi-links li:nth-child(2) .eachlink:after {
+	@include image-link-after($color5-pink,$color3-navyblue);
+}
+.multi-links li:nth-child(2) .eachlink:hover:after{
+	@include linear-gradient($color1-offnavyblue,$color2-darkpink);
+}
+
+
+.multi-links li:nth-child(3) .eachlink:after {
+	@include image-link-after($color6-sandal,$color3-navyblue);
+}
+.multi-links li:nth-child(3) .eachlink:hover:after{
+	@include linear-gradient($color4-greenlake,$color3-navyblue);
+}
+
+.slide-img{
+	@include size(90.2%,240px);
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+
+	@media screen and (max-width: 1025px){
+		@include size(100%,240px);
+	}
+}
+
+
+

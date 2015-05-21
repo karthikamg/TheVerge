@@ -52,6 +52,7 @@
 		@media screen and (min-width: 1025px){
 		.lower-header-links{
 			@include size(100%,49px);
+			position: relative;
 			}
 		}
 	}
@@ -253,11 +254,11 @@
 		}
 	}
 }
-.header-links{
+#header-links{
 	@media screen and (max-width: 1025px){
 		display: none;
 	}
-	@include size(98%,30px);
+	height: 30px;
 	padding: 10px;
 	background-color: $color-black;
 
@@ -266,21 +267,116 @@
 			text-transform: uppercase;
 			// @include inline-block;
 			display: inline-block;
-			margin-right: 18px;
+			margin-right: 15px;
 			font-family: $header-link-font;
 
-			a{
+			.link-text-style{
 				color: $color-white;
+
+				&:hover{
+  					color: $color-logo;
+  				}
 
 				img{
 	  				@include size(30px,30px);
 	  				margin-right: 5px;
 	  				vertical-align: middle;
   				}
-  				&:hover{
-  					color: $color-logo;
-  				}
+  				
 			}
+		}
+	}
+}
+
+.lowerheader-static{
+	position: fixed;
+	top : 0;
+	z-index : 25;
+	width : 74.5%;
+}
+.lowerheader-normal{
+	position:absolute;
+    width:98%;
+	height:30px;
+	padding:10px;
+}
+
+#triangle-icon{
+	display: none;
+	display: initial;
+	width: 20px;
+	height: 20px;
+	float: left;
+	transition: transform .5s ease-in-out;
+	position: absolute;
+	bottom: 15px;
+
+	&:hover{
+		transform: rotate(360deg);
+	}
+}
+
+.test{
+  	position: absolute;
+  	display: none;
+ 	z-index: 2;
+  	padding: 0.5rem;
+  	box-shadow: inset 0 0 15px 0 rgba(0,0,0,0.1);
+  	border: 10px solid white;
+  	outline-color: $color-logo;
+  	outline-style: solid;
+}
+
+#search{
+	@extend .test;
+	top: 52px;
+	left: 72%;
+    width: 20%;
+}
+#header-dropdown{
+	@extend .test;
+	@include size(94.5%,200px);
+	background-color: $color-white;
+}
+
+.header-drop-content{
+	@include float-left;
+	width: 18%;
+	height: 70%;
+}
+
+.header-drop-content1{
+	@extend .header-drop-content;
+	@include header-dpimg('../resources/images/Grate_color_1.0.0.jpg');
+	left: 0;
+}
+.header-drop-content2{
+	@extend .header-drop-content;
+	@include header-dpimg('../resources/images/TBrown_slots_22.0.0.jpg');
+}
+.header-drop-content3{
+	@extend .header-drop-content;
+	@include header-dpimg('../resources/images/Duplicate.0.0.jpeg');
+}
+.header-drop-content4{
+	@extend .header-drop-content;
+	@include header-dpimg('../resources/images/SUSAN-MILLER-OPENER.0.0.gif');
+}
+.header-drop-content5{
+	@extend .header-drop-content;
+	@include header-dpimg('../resources/images/social-share_1024.0.0.png');
+}
+
+.header-drop-text{
+	position: absolute;
+	top: 145px;
+	text-transform: none;
+
+	.drop-text-style{
+		color: $color-black;
+
+		&:hover{
+			color: $color-logo;
 		}
 	}
 }

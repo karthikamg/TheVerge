@@ -20,10 +20,22 @@
 	@media screen and (min-width: 700px) and (max-width: 1025px){
 		margin-top: -125px;
 	}
+	@media screen and (min-width: 600px) and (max-width: 1025px){
+		overflow-x: scroll;
+		overflow-y: hidden;
+		display: inline-block;
+		width: 100%;
+		white-space: no-wrap;
+		max-width: 1200px;
+	}
 
 	a{
 		.image-cannes{
 			@include databreaker('../resources/images/cannes.jpg');
+
+			@media screen and (min-width: 600px) and (max-width: 1025px){
+				width: 500px;
+			}
 
 			&:after{
 				@include image-after;
@@ -35,9 +47,19 @@
 		.image-ipad{
 			@include databreaker('../resources/images/best-stylus-buy-timn-5310.0.0.jpg');
 
+			@media screen and (min-width: 600px) and (max-width: 1025px){
+				width: 500px;
+				float: none;
+				left: 500px;
+			}
+
 			&:after{
 				@include image-after;
 				@include linear-gradient($color2-darkpink,$color1-offnavyblue);
+
+				@media screen and (min-width: 600px) and (max-width: 1025px){
+					left: -0;
+				}
 			}
 		}
 	}

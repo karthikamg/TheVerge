@@ -6,12 +6,12 @@
 
 .third-article{
 	@media screen and (min-width: 600px){
-		@include size(100%,1200px);
+		@include size(100%,1500px);
 		// border: 1px solid $color-grey;
 		position: relative;
 
 		@media screen and (min-width: 600px) and (max-width: 1025px){
-			top: 550px;
+			// top: 550px;
 			border: none;
 		}
 	}
@@ -31,7 +31,7 @@
 	  	// border-left: none;
 
 	  	@media screen and (min-width: 600px) and (max-width: 1025px){
-	  		@include size(44%,35%);
+	  		@include size(44.5%,31%);
 	  	}
 	}
 	.assassin{
@@ -64,7 +64,7 @@
 	}		
 
 		@media screen and (min-width: 600px) and (max-width: 1025px){
-	  		@include size(44%,35%);
+	  		@include size(44.5%,31%);
 			.assassin-right{
 				@include size(100%,160px);
 		  		
@@ -103,9 +103,9 @@
 		  padding: 1rem;
 
 		  @media screen and (min-width: 600px) and (max-width: 1025px){
-		  		@include size(45.5%,34%);
+		  		@include size(45.5%,30%);
 		  		left: 50%;
-		  		top: 37.5%;
+		  		top: 33%;
 		  }
 	}
 	.article3-image-link{
@@ -164,8 +164,9 @@
           padding-right: 5px;
 
           @media screen and (min-width: 600px) and (max-width: 1025px){
-		  		@include size(48%,20%);
-		  		top: 60.5%;
+		  		@include size(44.5%,20%);
+		  		top: 55.5%;
+		  		padding: 1.2rem;
 		  }
 	}
 	.muppet{
@@ -184,7 +185,7 @@
 		  @media screen and (min-width: 600px) and (max-width: 1025px){
 		  		@include size(45.5%,35%);
 		  		left: 50%;
-		  		top: 74%;
+		  		// top: 74%;
 		  		border-bottom: none;
 		  }
 	}
@@ -202,8 +203,8 @@
 		  padding: 1rem;
 
 		  @media screen and (min-width: 600px) and (max-width: 1025px){
-		  		@include size(45%,35%);
-		  		top: 80.5%;
+		  		@include size(45.5%,35%);
+		  		top: 78%;
 		  		border-bottom: none;
 		  }
 	}

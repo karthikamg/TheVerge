@@ -54,6 +54,8 @@
 		.most-recent-image{
 			@include size(100px, auto);
 			margin-left: 15px;
+			position: absolute;
+			left: 0;
 		}
 		.most-recent-text{
 			@include float-left;
@@ -92,7 +94,7 @@
 	@include size(100%,200px)
 }
 
-.multi-photoessay-content1{
+#multi-photoessay-content1{
 	@include multi-content('../resources/images/17403200071_daabc85148_o.0.0.jpg','../resources/images/rolls-royce-wraith-inspired-by-fashion-unveil-IMG_9447-vrg-rm-2015.0.0.jpg','../resources/images/RR_3575_Front_3Q.0.0.jpg');
 
 	.author-date-comment{
@@ -105,16 +107,50 @@
 	}
 }
 
-.multi-content-sec1{
-	@include multi-content('../resources/images/first-click-spain.0.0.png','../resources/images/apple-watch-notif-stock-IMG_3397_copy.0.0.jpg','../resources/images/watchlead.0.0.jpg');
+#multi-photoessay-content2{
+	@include multi-content('../resources/images/camaro-reveal-002-2040.0.0.jpg','../resources/images/DB2015AU00959_large.0.0.jpg','../resources/images/porsche-experience-center-008-2040.0.0.jpg');
+	display: none;
+
+	.author-date-comment{
+		position: absolute; 
+		z-index: 2;
+		color: $color-white;
+		padding: 0.5rem;
+		top: 105px;
+		font-size: 14px;
+	}
 }
-.multi-content-sec2{
+
+#multi-content-sec1{
+	@include multi-content('../resources/images/first-click-spain.0.0.png','../resources/images/apple-watch-notif-stock-IMG_3397_copy.0.0.jpg','../resources/images/watchlead.0.0.jpg');
+	z-index: 2;
+}
+#multi-content-sec2{
 	@include multi-content('../resources/images/ef989fe2-5c9b-4437-ad74-eebf34fbb625.0.0.jpg','../resources/images/vrg_vho_348_hololens_header_720.0.0.png','../resources/images/hololensehandson5_1020.0.0.jpg');
 	top: 270px;
+	z-index: 2;
 }
-.multi-content-sec3{
-	@include multi-content('../resources/images/Screen_Shot_2015-05-06_at_12.12.54_PM.0.0.png','../resources/images/Nexus-Family.0.0.jpg','../resources/images/Screen_Shot_2015-04-22_at_4.45.59_PM.0.0.png');
+#multi-content-sec3{
+	@include multi-content('../resources/images/Screen_Shot.multi-content2_2015-05-06_at_12.12.54_PM.0.0.png','../resources/images/Nexus-Family.0.0.jpg','../resources/images/Screen_Shot_2015-04-22_at_4.45.59_PM.0.0.png');
 	top: 470px;
+	z-index: 2;
+}
+#multi-content-sec4{
+	@include multi-content('../resources/images/v-IMG_3672.0.0.jpg','../resources/images/WaterlichtRoosegaarde10.0.0.jpg','../resources/images/g4-11.0.0.jpg');
+	display: none;
+	z-index: 1;
+}
+#multi-content-sec5{
+	@include multi-content('../resources/images/FXT14058-2.0.0.jpg','../resources/images/e-logo.0.0.jpg','../resources/images/Screen_Shot_2015-04-29_at_2.25.13_PM.0.0.png');
+	top: 270px;
+	display: none;
+	z-index: 1;
+}
+#multi-content-sec6{
+	@include multi-content('../resources/images/Nexus6withMoto360.0.0.jpg','../resources/images/nexus-6-review-c-theverge-1_1320.0.0.jpg');
+	top: 470px;
+	display: none;
+	z-index: 1;
 }
 
 .flap-over1{
