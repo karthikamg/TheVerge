@@ -71,7 +71,7 @@ function searchonclick(){
 }
 
 function droponclick(){
-	// drop = document.getElementById("header-dropdown");
+	drop = document.getElementById("header-dropdown");
 	 if(drop.style.display=="none" || drop.style.display==""){
 	 	drop.style.display="initial";
 	 	drop.value="";

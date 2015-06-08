@@ -9,10 +9,10 @@
 	position: absolute;	
 }
 
-.disabled{
-	z-index: 1;
-	position: absolute;	
-}
+// .disabled{
+// 	z-index: 1;
+// 	position: absolute;	
+// }
 
 .enter{
 	// left: 0;
@@ -24,7 +24,6 @@
 	transform: translate(-100%);
 }
 .wait{
-	// left: 100%;
 	// transform: translate(-100%);
 	transform: translate(100%);
 }
@@ -80,7 +79,7 @@
 
 .photoessay-links{
 	position: relative;
-	@include size(100%,240px);
+	@include size(100%,200px);
 	border: 1px solid $color-grey;
 	display: inline-block;
 }
@@ -113,6 +112,10 @@
 	// &:hover{
 	// 	background-color: $color-strong-ivory
 	// }
+}
+
+.next1{
+	@extend .next;
 }
 
 .multi-links{
@@ -194,7 +197,7 @@
 }
 
 .slide-img{
-	@include size(90.2%,240px);
+	@include size(90.2%,200px);
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
@@ -203,6 +206,7 @@
 		@include size(100%,240px);
 	}
 }
+
 
 
 

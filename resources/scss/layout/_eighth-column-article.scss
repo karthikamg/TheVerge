@@ -3,33 +3,6 @@
 @import 'helpers/_mixins';
 @import 'helpers/_variables';
 
-// -webkit-columns: 100px 3; 
-    // -moz-columns: 100px 3; 
-    // columns: 100px 3;
-
-    // -webkit-column-rule: 4px outset #ff00ff;
-    // -moz-column-rule: 4px outset #ff00ff; 
-    // column-rule: 4px outset #ff00ff;
-
-
-//     div.inflow {
-//   width: 200px; 
-//   height: 1000px; 
-//   border: 1px solid blue; 
-//   float: right; 
-//   position: relative; 
-//   margin-right: 100px;
-// }
-// div.positioner {position: absolute; right: 0;} /*may not be needed: see below*/
-// div.fixed {
-//   width: 80px; 
-//   border: 1px solid red; 
-//   height: 100px; 
-//   position: fixed; 
-//   top: 60px; 
-//   margin-left: 15px;
-// }
-
 
 .column{
 	@include size(24.85%,100%);
@@ -54,7 +27,6 @@
 		height: 1020px;
 	}
 	@media screen and (min-width: 600px) and (max-width: 1000px){
-		top: 700px;
 		width: 49.5%;
 		// height: 1220px;
 	}
@@ -86,22 +58,23 @@
 
 	@media screen and (max-width: 1000px){
 		height: 1200px;
+		top: 525px;
 	}
 	
 	.column-one{
 		@extend .column;
 		border-left: 1px solid $color-grey;
 
-		@media screen and (max-width: 1000px){
-			top: 700px;
-		}
+		// @media screen and (max-width: 1000px){
+		// 	top: 0;
+		// }
 	}
 	.column-two{
 		@extend .column;
 
-		@media screen and (max-width: 1000px){
-			top: 700px;
-		}
+		// @media screen and (max-width: 1000px){
+		// 	top: 0px;
+		// }
 	}
 	.column-three{
 		@extend .column;
@@ -159,11 +132,8 @@
 			text-decoration: underline;
 		}
 	}
-	@media screen and (min-width: 600px) and (max-width: 700px){
-		top: 2000px;
-	}
-	@media screen and (min-width: 700px) and (max-width: 1000px){
-		top: 1800px;
+	@media screen and (min-width: 600px) and (max-width: 1000px){
+		top: 1650px;
 	}
 	@media screen and (min-width: 1000px) and (max-width: 1025px){
 		top: 700px;

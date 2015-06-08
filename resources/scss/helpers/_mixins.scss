@@ -390,7 +390,7 @@
 @mixin image-link-after($color1:$color4-greenlake ,$color2:$color1-offnavyblue){
 	@include image-after;
 	@include linear-gradient($color1,$color2);
-	z-index: 2;
+	z-index: 1;
 	left: -0;
 	top: 0;
 }

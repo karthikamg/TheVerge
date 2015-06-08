@@ -1,4 +1,19 @@
 $(document).ready(function(){
+
+	// $(window).scroll(function(){
+	// $scroll = $('#header-links');
+	// $triangle = $('#triangle-icon');
+
+	// 	if($(window).scrollTop()>100 && $(window).scrollTop()<1500){
+	// 		$scroll.toggleClass('lowerheader-normal lowerheader-static');
+	// 		$triangle.css({'display':'initial'});
+	// 	}
+	// 	else{
+	// 		$scroll.toggleClass('lowerheader-static lowerheader-normal');
+	// 		$triangle.css({'display':'none'});
+	// 	}
+	// });
+
 	$photoessay = $('.slide-img');  
 	var $x = [];
 
@@ -283,6 +298,8 @@ $(document).ready(function(){
 // 	$myid.addClass('enter active');
 // }
 // $('#myId').addremovefns($multil1);
+
+
 
 
 
